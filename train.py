@@ -96,24 +96,32 @@ def parse_args():
 
 
 if __name__ == '__main__':
+
+
     args = parse_args()
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
 
+
+    # *************************** File management **********************************************************************
     current_time = datetime.datetime.now().strftime('%b%d_%H-%M-%S')
     log_dir = os.path.join('runs', args.data, current_time)
     writer = SummaryWriter(log_dir=log_dir, comment='%s Conv' % args.data)
-    print('log dir: {log_dir}'.format(log_dir=log_dir))
+    print('- Logging directory: {log_dir}'.format(log_dir=log_dir))
     out_dir = os.path.join(args.output, args.data, current_time)
     os.makedirs(out_dir)
-    print('out dir: {out_dir}'.format(out_dir=out_dir))
+    print('- Output directory: {out_dir}'.format(out_dir=out_dir))
+    # ******************************************************************************************************************
 
+
+    # ******************************************************************************************************************
     get_loader_kwargs  = {}
     to_st_train_kwargs = {}
     to_st_test_kwargs  = {}
 
     n_iters = args.n_iters
     n_iters_test = args.n_iters_test
+
 
     if args.data == 'MNIST':
         im_dims = (1, 28, 28)
@@ -134,89 +142,146 @@ if __name__ == '__main__':
         im_dims = (1, args.Q_resolution, args.I_resolution)
         ref_im_dims = (2, 1, 1024)
         target_size = 24
+        # 'get_radio_ml_loader' is defined in data/load_radio_ml.py and used to load data
         from data.load_radio_ml import get_radio_ml_loader as get_loader
+        # 'iq2spiketrain' is defined in data/utils.py
+        # 'iq2spiketrain' is used to convert each I/Q sample to a spike in the I/Q plane over time
         from data.utils import iq2spiketrain as to_spike_train
-        # Set "get loader" kwargs
-        get_loader_kwargs['data_dir'] = args.radio_ml_data_dir
-        get_loader_kwargs['min_snr'] = args.min_snr
-        get_loader_kwargs['max_snr'] = args.max_snr
-        get_loader_kwargs['per_h5_frac'] = args.per_h5_frac
-        get_loader_kwargs['train_frac'] = args.train_frac
-        # Set "to spike train" kwargs
-        for to_st_kwargs in (to_st_train_kwargs, to_st_test_kwargs):
-            to_st_kwargs['out_w'] = args.I_resolution
-            to_st_kwargs['out_h'] = args.Q_resolution
-            to_st_kwargs['min_I'] = args.I_bounds[0]
-            to_st_kwargs['max_I'] = args.I_bounds[1]
-            to_st_kwargs['min_Q'] = args.Q_bounds[0]
-            to_st_kwargs['max_Q'] = args.Q_bounds[1]
-        to_st_train_kwargs['max_duration'] = n_iters
-        to_st_train_kwargs['gs_stdev'] = 0
-        to_st_test_kwargs['max_duration'] = n_iters_test
-        to_st_test_kwargs['gs_stdev'] = 0
 
-    # number of test samples: n_test * batch_size_test
+        # ---------------------------- Set "get loader" kwargs ---------------------------------------------------------
+        get_loader_kwargs['data_dir'] = args.radio_ml_data_dir # Set saving data folder
+        get_loader_kwargs['min_snr'] = args.min_snr            # Set the min SNR
+        get_loader_kwargs['max_snr'] = args.max_snr            # Set the max SNR
+        get_loader_kwargs['per_h5_frac'] = args.per_h5_frac    # Set fraction of each HDF5 data file to use
+        get_loader_kwargs['train_frac'] = args.train_frac      # Set the split fraction of train set over (train+test) set
+        # --------------------------------------------------------------------------------------------------------------
+
+        # ---------------------------- Set "to spike train" kwargs -----------------------------------------------------
+        for to_st_kwargs in (to_st_train_kwargs, to_st_test_kwargs):
+            to_st_kwargs['out_w'] = args.I_resolution   # Default value: 128. Set size of I dimension (used when representing I/Q plane as image)
+            to_st_kwargs['out_h'] = args.Q_resolution   # Default value: 128. Set size of Q dimension (used when representing I/Q plane as image)
+            to_st_kwargs['min_I'] = args.I_bounds[0]    # Default value: -1. Set min values to be represented in I dimension of I/Q image
+            to_st_kwargs['max_I'] = args.I_bounds[1]    # Default value: 1. Set max values to be represented in Q dimension of I/Q image
+            to_st_kwargs['min_Q'] = args.Q_bounds[0]    # Default value: -1
+            to_st_kwargs['max_Q'] = args.Q_bounds[1]    # Default value: 1
+        to_st_train_kwargs['max_duration'] = n_iters      # Default value: 1024
+        to_st_train_kwargs['gs_stdev'] = 0
+        to_st_test_kwargs['max_duration'] = n_iters_test  # Default value: 1024
+        to_st_test_kwargs['gs_stdev'] = 0
+        # --------------------------------------------------------------------------------------------------------------
+    # ******************************************************************************************************************
+
+
+    # ******************************************************************************************************************
+    # 'np.ceil' returns the min integer i, i>=x
+    # 'args.n_test_samples': default value: 128. Nb of test samples to be used
+    # 'args.batch_size_test': default value: 64. Batch size for testing
     n_test = np.ceil(float(args.n_test_samples) /
                      args.batch_size_test).astype(int)
+    # 'args.n_steps': default value: 10000. Nb of steps to train
+    # 'args.n_test_interval': default value: 20. Nb of steps to run before testing
     n_tests_total = np.ceil(float(args.n_steps) /
                             args.n_test_interval).astype(int)
+    # ******************************************************************************************************************
 
+
+    # ************************* Define optimizer & loss func ***********************************************************************
+    # Assign the optimizer method as 'args.optim_type'
     opt = getattr(torch.optim, args.optim_type)
     opt_param = {
-        'betas': [0.0, args.beta],
+        'betas': [0.0, args.beta],  # 'args.beta': default value: 0.95. Beta2 parameters for Adamax
         'weight_decay': 10.0,
     }
     ref_opt_param = {
         'lr': args.ref_lr,
         'betas': [0.0, args.beta],
     }
+    # Assign the loss func as 'args.loss_type'
     loss = getattr(torch.nn, args.loss_type)
+    # ******************************************************************************************************************
 
+
+    # ************************* Set up for other networks except reference network *************************************
+    # If we don't want to train only the reference network
     if not args.just_ref:
-        burnin = args.burnin
+        burnin = args.burnin     # Default value: 50
+        # 'load_network_spec' is defined in networks/__init__.py
+        # Load network from path of .yaml file ('args.network_spec') describing network architecture
         convs = load_network_spec(args.network_spec)
+
+        # 'ConvNetwork' is defined in networks/__init__.py
         net = ConvNetwork(args, im_dims, args.batch_size, convs, target_size,
                           act=torch.nn.Sigmoid(), loss=loss, opt=opt, opt_param=opt_param,
                           learning_rates=args.learning_rates, burnin=burnin)
 
+        # ------------------------ Load weights to model variable 'net' -------------------------------------------------
         if args.restore_path:
             print('-' * 80)
             if not os.path.isfile(args.restore_path):
-                print('ERROR: Cannot load `%s`.' % args.restore_path)
-                print('File does not exist! Aborting load...')
+                print('ERROR: Cannot load file `%s`.' % args.restore_path)
+                print('File does not exist! Exit loading...')
             else:
                 state_dict = torch.load(args.restore_path)
                 net.load_state_dict(state_dict)
-                print('Loaded the SNN model from `%s`.' % args.restore_path)
+                print('Loaded the weights of trained SNN model from `%s`.' % args.restore_path)
             print('-' * 80)
+        # --------------------------------------------------------------------------------------------------------------
 
+        # -------------------------- Model set up -----------------------------------------------------------------------
         net = net.to(device)
-        net.reset(True)
+        net.reset(True)   # Reset all the trained weight of model 'net'
+        # Create a new 3D array has size [n_tests_total, n_test, len(net.dcll_slices)]
         acc_test = np.empty([n_tests_total, n_test, len(net.dcll_slices)])
-
+        # 'NetworkDumper' is class defined in dcll/pytorch_utils.py
         dumper = NetworkDumper(writer, net)
+        # --------------------------------------------------------------------------------------------------------------
+    # ******************************************************************************************************************
 
+
+    # ************************ Set up reference network ****************************************************************
+    # ----------------- Model set up -----------------------------------------------------------------------------------
+    # 'load_network_spec' is defined in networks/__init__.py
+    # Load network from path of .yaml file ('args.network_spec') describing network architecture
     ref_convs = load_network_spec(args.ref_network_spec)
+    # 'ReferenceConvNetwork' is class defined in networks/__init__.py
+    # Load reference convolution network
     ref_net = ReferenceConvNetwork(args, ref_im_dims, ref_convs, loss, opt, ref_opt_param, target_size)
     ref_net = ref_net.to(device)
+    # Create a new 3D array has size [n_tests_total, n_test, len(net.dcll_slices)]
     acc_test_ref = np.empty([n_tests_total, n_test])
+    # ------------------------------------------------------------------------------------------------------------------
 
+    # -------------------- Set up for saving to file -------------------------------------------------------------------
+    # If want to save into result directory
     if not args.no_save:
+        # 'annotate()' is defined in dcll/experiment_tools.py
+        # Create a text file 'filename' in directory 'out_dir', which saves content 'text'
         annotate(out_dir, text=log_dir, filename='log_dir.txt')
         annotate(out_dir, text=str(args), filename='args.txt')
         with open(os.path.join(out_dir, 'args.pkl'), 'wb') as fp:
+            # 'pickle.dump' serializes a python object hierarchy and returns the bytes object of the serialized object.
+            # The 'vars()' function returns the __dict__ attribute of the given object.
             pickle.dump(vars(args), fp)
         save_source(out_dir)
+    # ------------------------------------------------------------------------------------------------------------------
 
+    # ------------------------ Load data ------------------------------------------------------------------------------------------
+    #  'get_loader' is func 'get_radio_ml_loader' defined in data/load_radio_ml.py
+    # '**kwargs' as a dictionary saving keyworded variable which can be extracted based on keyword
     train_data = get_loader(args.batch_size, train=True, **get_loader_kwargs)
     gen_train = iter(train_data)
     gen_test = iter(get_loader(args.batch_size_test, train=False, **get_loader_kwargs))
 
+    # 'next()' is used to fetch next item from the collection
     all_test_data = [next(gen_test) for i in range(n_test)]
     all_test_data = [(samples, to_one_hot(labels, target_size))
                      for (samples, labels) in all_test_data]
 
     label_train_counts = np.zeros(target_size, dtype=int)
+    # ------------------------------------------------------------------------------------------------------------------
+
+    # ------------------------------------------------------------------------------------------------------------------
+    # 'arg.n_steps' is nb of training loops. Default value: 10000
     for step in range(args.n_steps):
         if ((step + 1) % 1000) == 0:
             if not args.just_ref:
@@ -224,12 +289,12 @@ if __name__ == '__main__':
                     net.dcll_slices[i].optimizer.param_groups[-1]['lr'] /= 2
                 net.dcll_slices[-1].optimizer2.param_groups[-1]['lr'] /= 2
             ref_net.optim.param_groups[-1]['lr'] /= 2
-            print('Adjusting learning rates')
+            print('- Adjusting learning rates')
 
         try:
             input, labels = next(gen_train)
         except StopIteration:
-            gen_train = iter(train_data)
+            gen_train = iter(train_data) # iter() function creates an object which can be iterated one element at a time
             input, labels = next(gen_train)
         for label in labels:
             label_train_counts[label] += 1
@@ -238,6 +303,7 @@ if __name__ == '__main__':
         if not args.just_ref:
             n_iters_sampled = n_iters  # np.random.randint(args.burnin + 1, n_iters + 1)
             to_st_train_kwargs['max_duration'] = n_iters_sampled
+            # 'to_spike_train' is used to convert each I/Q sample to a spike in the I/Q plane over time
             input_spikes, labels_spikes = to_spike_train(input, labels,
                                                          **to_st_train_kwargs)
             input_spikes = torch.Tensor(input_spikes).to(device)
@@ -251,9 +317,9 @@ if __name__ == '__main__':
                           labels=labels_spikes[sim_iteration])
             acc_train = net.accuracy(labels_spikes)
             step_str = str(step).zfill(5)
-            print('[TRAIN] Step {} \t Accuracy {}'.format(step_str, acc_train))
+            print('- [TRAINING] Loop {}, \t Accuracy {}'.format(step_str, acc_train))
 
-        ref_input = torch.Tensor(input).to(device).reshape(-1, *ref_im_dims)
+        ref_input = torch.Tensor(input).to(device).reshape(-1, *ref_im_dims)   # 'ref_im_dims' = (2,1,1024)
         ref_label = torch.Tensor(labels).to(device)
 
         ref_net.train()
@@ -269,7 +335,7 @@ if __name__ == '__main__':
                     try:
                         test_input = torch.Tensor(test_input).to(device)
                     except RuntimeError as e:
-                        print('Exception: ' + str(e) +
+                        print('- Exception: ' + str(e) +
                               '. Try to decrease your batch_size_test with the --batch_size_test argument.')
                         raise
                     test_labels = torch.Tensor(test_labels).to(device)
@@ -302,7 +368,7 @@ if __name__ == '__main__':
                 torch.save(net.cpu().state_dict(), save_path)
                 net = net.to(device)
                 print('-' * 80)
-                print('Saved network parameters to `%s`.' % save_path)
+                print('- Saved network parameters to `%s`.' % save_path)
                 print('-' * 80)
 
             if not args.just_ref:
@@ -311,8 +377,8 @@ if __name__ == '__main__':
                 acc = 'N/A'
             acc_ref = np.mean(acc_test_ref[test_idx], axis=0)
             step_str = str(step).zfill(5)
-            print('[TEST]  Step {} \t Accuracy {} \t Ref {}'.format(step_str, acc, acc_ref))
-            print('Label train percentages:')
+            print('- [TESTING]  Loop {}, \t Accuracy {}, \t Ref {}'.format(step_str, acc, acc_ref))
+            print('- Label train percentages:')
             label_train_percentages = label_train_counts / np.sum(label_train_counts) * 100
             print(np.array2string(label_train_percentages, max_line_width=300, precision=1))
 
