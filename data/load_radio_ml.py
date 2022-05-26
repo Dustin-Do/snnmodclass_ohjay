@@ -43,7 +43,7 @@ class RadioMLDataset(data.Dataset):
 
             for class_idx in range(24):
                 class_X = full_h5f['X'][(Y == class_idx).nonzero()[0]]
-                class_Z = full_h5f['Z'][(Y == class_idx, 0).nonzero()[0]]
+                class_Z = full_h5f['Z'][Y == class_idx, 0]
                 for snr in range(-26, 32, 2):
                     class_snr_name = 'class%d_snr%d.hdf5' % (class_idx, snr)
                     h5f_path = os.path.join(data_dir, class_snr_name)
