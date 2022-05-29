@@ -28,9 +28,9 @@ def parse_args():
                         metavar='N', help='fraction of each HDF5 data file to use')
     parser.add_argument('--train_frac', type=float, default=0.9,
                         metavar='N', help='train split (1-TRAIN_FRAC is the test split)')
-    parser.add_argument('--network_spec', type=str, default='snnmodclass_ohjay/networks/radio_ml_conv.yaml',
+    parser.add_argument('--network_spec', type=str, default='networks/radio_ml_conv.yaml',
                         metavar='S', help='path to YAML file describing net architecture')
-    parser.add_argument('--ref_network_spec', type=str, default='snnmodclass_ohjay/networks/radio_ml_conv_ref.yaml',
+    parser.add_argument('--ref_network_spec', type=str, default='networks/radio_ml_conv_ref.yaml',
                         metavar='S', help='path to YAML file describing reference net architecture')
     parser.add_argument('--just_ref', action='store_true',
                         help='whether we want to just train the reference network')
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     np.random.seed(args.seed)
 
 
-    # *************************** File management **********************************************************************
+# *************************** File management **************************************************************************
     current_time = datetime.datetime.now().strftime('%b%d_%H-%M-%S')
     log_dir = os.path.join('runs', args.data, current_time)
     writer = SummaryWriter(log_dir=log_dir, comment='%s Conv' % args.data)
@@ -111,10 +111,16 @@ if __name__ == '__main__':
     out_dir = os.path.join(args.output, args.data, current_time)
     os.makedirs(out_dir)
     print('- Output directory: {out_dir}'.format(out_dir=out_dir))
-    # ******************************************************************************************************************
+# **********************************************************************************************************************
 
 
-    # ******************************************************************************************************************
+# ****************************** Define and set kwargs parameters ******************************************************
+    """"
+    Define and set kwargs parameters for functions get_loader and to_spike_train
+    - 'get_loader' is used to load data
+    - 'to_spike_train' is used to convert each I/Q sample to a spike in I/Q plane
+    """
+
     get_loader_kwargs  = {}
     to_st_train_kwargs = {}
     to_st_test_kwargs  = {}
@@ -144,8 +150,7 @@ if __name__ == '__main__':
         target_size = 24
         # 'get_radio_ml_loader' is defined in data/load_radio_ml.py and used to load data
         from data.load_radio_ml import get_radio_ml_loader as get_loader
-        # 'iq2spiketrain' is defined in data/utils.py
-        # 'iq2spiketrain' is used to convert each I/Q sample to a spike in the I/Q plane over time
+        # 'iq2spiketrain' is defined in data/utils.py and used to convert each I/Q sample to a spike in the I/Q plane over time
         from data.utils import iq2spiketrain as to_spike_train
 
         # ---------------------------- Set "get loader" kwargs ---------------------------------------------------------
@@ -169,24 +174,24 @@ if __name__ == '__main__':
         to_st_test_kwargs['max_duration'] = n_iters_test  # Default value: 1024
         to_st_test_kwargs['gs_stdev'] = 0
         # --------------------------------------------------------------------------------------------------------------
-    # ******************************************************************************************************************
+# **********************************************************************************************************************
 
 
-    # ******************************************************************************************************************
+# **********************************************************************************************************************
     # 'np.ceil' returns the min integer i, i>=x
     # 'args.n_test_samples': default value: 128. Nb of test samples to be used
-    # 'args.batch_size_test': default value: 64. Batch size for testing
+    # 'args.batch_size_test': default value: 64. Input batch size for testing
     n_test = np.ceil(float(args.n_test_samples) /
                      args.batch_size_test).astype(int)
     # 'args.n_steps': default value: 10000. Nb of steps to train
     # 'args.n_test_interval': default value: 20. Nb of steps to run before testing
     n_tests_total = np.ceil(float(args.n_steps) /
                             args.n_test_interval).astype(int)
-    # ******************************************************************************************************************
+# **********************************************************************************************************************
 
 
-    # ************************* Define optimizer & loss func ***********************************************************************
-    # Assign the optimizer method as 'args.optim_type'
+# ************************* Define optimizer & loss func ***************************************************************
+    """Assign the optimizer method as 'args.optim_type' """
     opt = getattr(torch.optim, args.optim_type)
     opt_param = {
         'betas': [0.0, args.beta],  # 'args.beta': default value: 0.95. Beta2 parameters for Adamax
@@ -198,11 +203,11 @@ if __name__ == '__main__':
     }
     # Assign the loss func as 'args.loss_type'
     loss = getattr(torch.nn, args.loss_type)
-    # ******************************************************************************************************************
+# **********************************************************************************************************************
 
 
-    # ************************* Set up for other networks except reference network *************************************
-    # If we don't want to train only the reference network
+# ************************* Set up for other networks except reference network *****************************************
+    """If we don't want to train only the reference network"""
     if not args.just_ref:
         burnin = args.burnin     # Default value: 50
         # 'load_network_spec' is defined in networks/__init__.py
@@ -235,13 +240,14 @@ if __name__ == '__main__':
         # 'NetworkDumper' is class defined in dcll/pytorch_utils.py
         dumper = NetworkDumper(writer, net)
         # --------------------------------------------------------------------------------------------------------------
-    # ******************************************************************************************************************
+# **********************************************************************************************************************
 
 
-    # ************************ Set up reference network ****************************************************************
-    # ----------------- Model set up -----------------------------------------------------------------------------------
-    # 'load_network_spec' is defined in networks/__init__.py
-    # Load network from path of .yaml file ('args.network_spec') describing network architecture
+# ************************ Set up for reference network ****************************************************************
+    """
+    'load_network_spec' is defined in networks/__init__.py
+    Load network from path of .yaml file ('args.network_spec') describing network architecture
+    """
     ref_convs = load_network_spec(args.ref_network_spec)
     # 'ReferenceConvNetwork' is class defined in networks/__init__.py
     # Load reference convolution network
@@ -249,10 +255,12 @@ if __name__ == '__main__':
     ref_net = ref_net.to(device)
     # Create a new 3D array has size [n_tests_total, n_test, len(net.dcll_slices)]
     acc_test_ref = np.empty([n_tests_total, n_test])
-    # ------------------------------------------------------------------------------------------------------------------
+# **********************************************************************************************************************
 
-    # -------------------- Set up for saving to file -------------------------------------------------------------------
-    # If want to save into result directory
+# *************************Save info of 'log_dir' and 'args' *********************************************************************************************
+    """
+    Save information of logging directory and 'args' to .txt file in results directory.
+    """
     if not args.no_save:
         # 'annotate()' is defined in dcll/experiment_tools.py
         # Create a text file 'filename' in directory 'out_dir', which saves content 'text'
@@ -263,26 +271,32 @@ if __name__ == '__main__':
             # The 'vars()' function returns the __dict__ attribute of the given object.
             pickle.dump(vars(args), fp)
         save_source(out_dir)
-    # ------------------------------------------------------------------------------------------------------------------
+# **********************************************************************************************************************
 
-    # ------------------------ Load data ------------------------------------------------------------------------------------------
-    #  'get_loader' is func 'get_radio_ml_loader' defined in data/load_radio_ml.py
-    # '**kwargs' as a dictionary saving keyworded variable which can be extracted based on keyword
+# **************************** Load train and test data from .hdf5 file ************************************************
+    """
+    - 'get_loader' is func 'get_radio_ml_loader' defined in data/load_radio_ml.py
+    - '**kwargs' as a dictionary saving keyworded variable which can be extracted based on keyword 
+    - 'gen_train' has size (575.016, 1024, 2). 90% of truncated data (2048 ex each) of 24*13 [class,SNR] pairs
+    - 'gen_test' has size (63960, 1024, 2). 10% of truncated data (2048 ex each) of 24*13 [class,SNR] pairs
+    """
     train_data = get_loader(args.batch_size, train=True, **get_loader_kwargs)
     gen_train = iter(train_data)
     gen_test = iter(get_loader(args.batch_size_test, train=False, **get_loader_kwargs))
+# **********************************************************************************************************************
+
 
     # 'next()' is used to fetch next item from the collection
     all_test_data = [next(gen_test) for i in range(n_test)]
-    all_test_data = [(samples, to_one_hot(labels, target_size))
-                     for (samples, labels) in all_test_data]
+    all_test_data = [(samples, to_one_hot(labels, target_size)) for (samples, labels) in all_test_data]
 
-    label_train_counts = np.zeros(target_size, dtype=int)
-    # ------------------------------------------------------------------------------------------------------------------
+    label_train_counts = np.zeros(target_size, dtype=int)       # 'target_size = 24'
 
-    # ------------------------------------------------------------------------------------------------------------------
+
+# **********************************************************************************************************************
     # 'arg.n_steps' is nb of training loops. Default value: 10000
     for step in range(args.n_steps):
+    # -----------------------Adjust leaning rate------------------------------------------------------------------------
         if ((step + 1) % 1000) == 0:
             if not args.just_ref:
                 for i in range(len(net.dcll_slices)):
@@ -290,29 +304,39 @@ if __name__ == '__main__':
                 net.dcll_slices[-1].optimizer2.param_groups[-1]['lr'] /= 2
             ref_net.optim.param_groups[-1]['lr'] /= 2
             print('- Adjusting learning rates')
+    # ------------------------------------------------------------------------------------------------------------------
 
+    # ------------------------------------------------------------------------------------------------------------------
+        """  
+        - 'gen_train' has size (575.016, 1024, 2). 90% of truncated data (2048 ex each) of 24*13 [class,SNR] pairs
+        """
         try:
-            input, labels = next(gen_train)
+            input, labels = next(gen_train) # Slice over 'gen_train'
         except StopIteration:
             gen_train = iter(train_data) # iter() function creates an object which can be iterated one element at a time
             input, labels = next(gen_train)
         for label in labels:
             label_train_counts[label] += 1
         labels = to_one_hot(labels, target_size)
+    # ------------------------------------------------------------------------------------------------------------------
 
+    # ------------------------------------------------------------------------------------------------------------------
         if not args.just_ref:
+            # 'n_iters': how many ms do we present a sample during classification. Default value: 1024
             n_iters_sampled = n_iters  # np.random.randint(args.burnin + 1, n_iters + 1)
             to_st_train_kwargs['max_duration'] = n_iters_sampled
+
+            """Convert input data to spiking input"""
             # 'to_spike_train' is used to convert each I/Q sample to a spike in the I/Q plane over time
-            input_spikes, labels_spikes = to_spike_train(input, labels,
-                                                         **to_st_train_kwargs)
+            input_spikes, labels_spikes = to_spike_train(input, labels, **to_st_train_kwargs)
             input_spikes = torch.Tensor(input_spikes).to(device)
             labels_spikes = torch.Tensor(labels_spikes).to(device)
+            """-----------------------------------"""
 
-            # Train
+            """TRAINING"""
             net.reset()
             net.train()
-            for sim_iteration in range(n_iters_sampled):
+            for sim_iteration in range(n_iters_sampled): # 'n_iters_sampled' = 1024
                 net.learn(x=input_spikes[sim_iteration],
                           labels=labels_spikes[sim_iteration])
             acc_train = net.accuracy(labels_spikes)
