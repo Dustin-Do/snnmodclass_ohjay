@@ -312,6 +312,7 @@ if __name__ == '__main__':
         """  
         - 'gen_train' has size (575.016, 1024, 2). 90% of truncated data (2048 ex each) of 24*13 [class,SNR] pairs
         - 'input' will have size tensor(64, 2, 1, 1024)
+        - 'label' will have size tensor(64,24)
         """
         try:
             input, labels = next(gen_train) # Slice over 'gen_train'
@@ -321,8 +322,6 @@ if __name__ == '__main__':
         for label in labels:
             label_train_counts[label] += 1
         labels = to_one_hot(labels, target_size)
-
-        print('labels size:', labels.size())
     # ------------------------------------------------------------------------------------------------------------------
 
     # ------------------------------------------------------------------------------------------------------------------
