@@ -107,10 +107,12 @@ if __name__ == '__main__':
     current_time = datetime.datetime.now().strftime('%b%d_%H-%M-%S')
     log_dir = os.path.join('runs', args.data, current_time)
     writer = SummaryWriter(log_dir=log_dir, comment='%s Conv' % args.data)
+    print('#'*120)
     print('- Logging directory: {log_dir}'.format(log_dir=log_dir))
     out_dir = os.path.join(args.output, args.data, current_time)
     os.makedirs(out_dir)
     print('- Output directory: {out_dir}'.format(out_dir=out_dir))
+    print('#'*120)
 # **********************************************************************************************************************
 
 
