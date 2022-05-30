@@ -1,0 +1,1019 @@
+- Logging directory: runs/RadioML/May29_18-02-16
+- Output directory: results/RadioML/May29_18-02-16
+Sigmoid()
+Conv2D Layer  (128, 128) (128, 128) 1 32 7 1 3 1
+Sigmoid()
+Conv2D Layer  torch.Size([128, 128]) (128, 128) 32 32 7 1 3 1
+Sigmoid()
+Conv2D Layer  torch.Size([128, 128]) (128, 128) 32 32 7 1 3 1
+Wrote (SNR -26, class 0) data to `2018.01/class0_snr-26.hdf5`.
+Wrote (SNR -24, class 0) data to `2018.01/class0_snr-24.hdf5`.
+Wrote (SNR -22, class 0) data to `2018.01/class0_snr-22.hdf5`.
+Wrote (SNR -20, class 0) data to `2018.01/class0_snr-20.hdf5`.
+Wrote (SNR -18, class 0) data to `2018.01/class0_snr-18.hdf5`.
+Wrote (SNR -16, class 0) data to `2018.01/class0_snr-16.hdf5`.
+Wrote (SNR -14, class 0) data to `2018.01/class0_snr-14.hdf5`.
+Wrote (SNR -12, class 0) data to `2018.01/class0_snr-12.hdf5`.
+Wrote (SNR -10, class 0) data to `2018.01/class0_snr-10.hdf5`.
+Wrote (SNR -8, class 0) data to `2018.01/class0_snr-8.hdf5`.
+Wrote (SNR -6, class 0) data to `2018.01/class0_snr-6.hdf5`.
+Wrote (SNR -4, class 0) data to `2018.01/class0_snr-4.hdf5`.
+Wrote (SNR -2, class 0) data to `2018.01/class0_snr-2.hdf5`.
+Wrote (SNR 0, class 0) data to `2018.01/class0_snr0.hdf5`.
+Wrote (SNR 2, class 0) data to `2018.01/class0_snr2.hdf5`.
+Wrote (SNR 4, class 0) data to `2018.01/class0_snr4.hdf5`.
+Wrote (SNR 6, class 0) data to `2018.01/class0_snr6.hdf5`.
+Wrote (SNR 8, class 0) data to `2018.01/class0_snr8.hdf5`.
+Wrote (SNR 10, class 0) data to `2018.01/class0_snr10.hdf5`.
+Wrote (SNR 12, class 0) data to `2018.01/class0_snr12.hdf5`.
+Wrote (SNR 14, class 0) data to `2018.01/class0_snr14.hdf5`.
+Wrote (SNR 16, class 0) data to `2018.01/class0_snr16.hdf5`.
+Wrote (SNR 18, class 0) data to `2018.01/class0_snr18.hdf5`.
+Wrote (SNR 20, class 0) data to `2018.01/class0_snr20.hdf5`.
+Wrote (SNR 22, class 0) data to `2018.01/class0_snr22.hdf5`.
+Wrote (SNR 24, class 0) data to `2018.01/class0_snr24.hdf5`.
+Wrote (SNR 26, class 0) data to `2018.01/class0_snr26.hdf5`.
+Wrote (SNR 28, class 0) data to `2018.01/class0_snr28.hdf5`.
+Wrote (SNR 30, class 0) data to `2018.01/class0_snr30.hdf5`.
+Wrote (SNR -26, class 1) data to `2018.01/class1_snr-26.hdf5`.
+Wrote (SNR -24, class 1) data to `2018.01/class1_snr-24.hdf5`.
+Wrote (SNR -22, class 1) data to `2018.01/class1_snr-22.hdf5`.
+Wrote (SNR -20, class 1) data to `2018.01/class1_snr-20.hdf5`.
+Wrote (SNR -18, class 1) data to `2018.01/class1_snr-18.hdf5`.
+Wrote (SNR -16, class 1) data to `2018.01/class1_snr-16.hdf5`.
+Wrote (SNR -14, class 1) data to `2018.01/class1_snr-14.hdf5`.
+Wrote (SNR -12, class 1) data to `2018.01/class1_snr-12.hdf5`.
+Wrote (SNR -10, class 1) data to `2018.01/class1_snr-10.hdf5`.
+Wrote (SNR -8, class 1) data to `2018.01/class1_snr-8.hdf5`.
+Wrote (SNR -6, class 1) data to `2018.01/class1_snr-6.hdf5`.
+Wrote (SNR -4, class 1) data to `2018.01/class1_snr-4.hdf5`.
+Wrote (SNR -2, class 1) data to `2018.01/class1_snr-2.hdf5`.
+Wrote (SNR 0, class 1) data to `2018.01/class1_snr0.hdf5`.
+Wrote (SNR 2, class 1) data to `2018.01/class1_snr2.hdf5`.
+Wrote (SNR 4, class 1) data to `2018.01/class1_snr4.hdf5`.
+Wrote (SNR 6, class 1) data to `2018.01/class1_snr6.hdf5`.
+Wrote (SNR 8, class 1) data to `2018.01/class1_snr8.hdf5`.
+Wrote (SNR 10, class 1) data to `2018.01/class1_snr10.hdf5`.
+Wrote (SNR 12, class 1) data to `2018.01/class1_snr12.hdf5`.
+Wrote (SNR 14, class 1) data to `2018.01/class1_snr14.hdf5`.
+Wrote (SNR 16, class 1) data to `2018.01/class1_snr16.hdf5`.
+Wrote (SNR 18, class 1) data to `2018.01/class1_snr18.hdf5`.
+Wrote (SNR 20, class 1) data to `2018.01/class1_snr20.hdf5`.
+Wrote (SNR 22, class 1) data to `2018.01/class1_snr22.hdf5`.
+Wrote (SNR 24, class 1) data to `2018.01/class1_snr24.hdf5`.
+Wrote (SNR 26, class 1) data to `2018.01/class1_snr26.hdf5`.
+Wrote (SNR 28, class 1) data to `2018.01/class1_snr28.hdf5`.
+Wrote (SNR 30, class 1) data to `2018.01/class1_snr30.hdf5`.
+Wrote (SNR -26, class 2) data to `2018.01/class2_snr-26.hdf5`.
+Wrote (SNR -24, class 2) data to `2018.01/class2_snr-24.hdf5`.
+Wrote (SNR -22, class 2) data to `2018.01/class2_snr-22.hdf5`.
+Wrote (SNR -20, class 2) data to `2018.01/class2_snr-20.hdf5`.
+Wrote (SNR -18, class 2) data to `2018.01/class2_snr-18.hdf5`.
+Wrote (SNR -16, class 2) data to `2018.01/class2_snr-16.hdf5`.
+Wrote (SNR -14, class 2) data to `2018.01/class2_snr-14.hdf5`.
+Wrote (SNR -12, class 2) data to `2018.01/class2_snr-12.hdf5`.
+Wrote (SNR -10, class 2) data to `2018.01/class2_snr-10.hdf5`.
+Wrote (SNR -8, class 2) data to `2018.01/class2_snr-8.hdf5`.
+Wrote (SNR -6, class 2) data to `2018.01/class2_snr-6.hdf5`.
+Wrote (SNR -4, class 2) data to `2018.01/class2_snr-4.hdf5`.
+Wrote (SNR -2, class 2) data to `2018.01/class2_snr-2.hdf5`.
+Wrote (SNR 0, class 2) data to `2018.01/class2_snr0.hdf5`.
+Wrote (SNR 2, class 2) data to `2018.01/class2_snr2.hdf5`.
+Wrote (SNR 4, class 2) data to `2018.01/class2_snr4.hdf5`.
+Wrote (SNR 6, class 2) data to `2018.01/class2_snr6.hdf5`.
+Wrote (SNR 8, class 2) data to `2018.01/class2_snr8.hdf5`.
+Wrote (SNR 10, class 2) data to `2018.01/class2_snr10.hdf5`.
+Wrote (SNR 12, class 2) data to `2018.01/class2_snr12.hdf5`.
+Wrote (SNR 14, class 2) data to `2018.01/class2_snr14.hdf5`.
+Wrote (SNR 16, class 2) data to `2018.01/class2_snr16.hdf5`.
+Wrote (SNR 18, class 2) data to `2018.01/class2_snr18.hdf5`.
+Wrote (SNR 20, class 2) data to `2018.01/class2_snr20.hdf5`.
+Wrote (SNR 22, class 2) data to `2018.01/class2_snr22.hdf5`.
+Wrote (SNR 24, class 2) data to `2018.01/class2_snr24.hdf5`.
+Wrote (SNR 26, class 2) data to `2018.01/class2_snr26.hdf5`.
+Wrote (SNR 28, class 2) data to `2018.01/class2_snr28.hdf5`.
+Wrote (SNR 30, class 2) data to `2018.01/class2_snr30.hdf5`.
+Wrote (SNR -26, class 3) data to `2018.01/class3_snr-26.hdf5`.
+Wrote (SNR -24, class 3) data to `2018.01/class3_snr-24.hdf5`.
+Wrote (SNR -22, class 3) data to `2018.01/class3_snr-22.hdf5`.
+Wrote (SNR -20, class 3) data to `2018.01/class3_snr-20.hdf5`.
+Wrote (SNR -18, class 3) data to `2018.01/class3_snr-18.hdf5`.
+Wrote (SNR -16, class 3) data to `2018.01/class3_snr-16.hdf5`.
+Wrote (SNR -14, class 3) data to `2018.01/class3_snr-14.hdf5`.
+Wrote (SNR -12, class 3) data to `2018.01/class3_snr-12.hdf5`.
+Wrote (SNR -10, class 3) data to `2018.01/class3_snr-10.hdf5`.
+Wrote (SNR -8, class 3) data to `2018.01/class3_snr-8.hdf5`.
+Wrote (SNR -6, class 3) data to `2018.01/class3_snr-6.hdf5`.
+Wrote (SNR -4, class 3) data to `2018.01/class3_snr-4.hdf5`.
+Wrote (SNR -2, class 3) data to `2018.01/class3_snr-2.hdf5`.
+Wrote (SNR 0, class 3) data to `2018.01/class3_snr0.hdf5`.
+Wrote (SNR 2, class 3) data to `2018.01/class3_snr2.hdf5`.
+Wrote (SNR 4, class 3) data to `2018.01/class3_snr4.hdf5`.
+Wrote (SNR 6, class 3) data to `2018.01/class3_snr6.hdf5`.
+Wrote (SNR 8, class 3) data to `2018.01/class3_snr8.hdf5`.
+Wrote (SNR 10, class 3) data to `2018.01/class3_snr10.hdf5`.
+Wrote (SNR 12, class 3) data to `2018.01/class3_snr12.hdf5`.
+Wrote (SNR 14, class 3) data to `2018.01/class3_snr14.hdf5`.
+Wrote (SNR 16, class 3) data to `2018.01/class3_snr16.hdf5`.
+Wrote (SNR 18, class 3) data to `2018.01/class3_snr18.hdf5`.
+Wrote (SNR 20, class 3) data to `2018.01/class3_snr20.hdf5`.
+Wrote (SNR 22, class 3) data to `2018.01/class3_snr22.hdf5`.
+Wrote (SNR 24, class 3) data to `2018.01/class3_snr24.hdf5`.
+Wrote (SNR 26, class 3) data to `2018.01/class3_snr26.hdf5`.
+Wrote (SNR 28, class 3) data to `2018.01/class3_snr28.hdf5`.
+Wrote (SNR 30, class 3) data to `2018.01/class3_snr30.hdf5`.
+Wrote (SNR -26, class 4) data to `2018.01/class4_snr-26.hdf5`.
+Wrote (SNR -24, class 4) data to `2018.01/class4_snr-24.hdf5`.
+Wrote (SNR -22, class 4) data to `2018.01/class4_snr-22.hdf5`.
+Wrote (SNR -20, class 4) data to `2018.01/class4_snr-20.hdf5`.
+Wrote (SNR -18, class 4) data to `2018.01/class4_snr-18.hdf5`.
+Wrote (SNR -16, class 4) data to `2018.01/class4_snr-16.hdf5`.
+Wrote (SNR -14, class 4) data to `2018.01/class4_snr-14.hdf5`.
+Wrote (SNR -12, class 4) data to `2018.01/class4_snr-12.hdf5`.
+Wrote (SNR -10, class 4) data to `2018.01/class4_snr-10.hdf5`.
+Wrote (SNR -8, class 4) data to `2018.01/class4_snr-8.hdf5`.
+Wrote (SNR -6, class 4) data to `2018.01/class4_snr-6.hdf5`.
+Wrote (SNR -4, class 4) data to `2018.01/class4_snr-4.hdf5`.
+Wrote (SNR -2, class 4) data to `2018.01/class4_snr-2.hdf5`.
+Wrote (SNR 0, class 4) data to `2018.01/class4_snr0.hdf5`.
+Wrote (SNR 2, class 4) data to `2018.01/class4_snr2.hdf5`.
+Wrote (SNR 4, class 4) data to `2018.01/class4_snr4.hdf5`.
+Wrote (SNR 6, class 4) data to `2018.01/class4_snr6.hdf5`.
+Wrote (SNR 8, class 4) data to `2018.01/class4_snr8.hdf5`.
+Wrote (SNR 10, class 4) data to `2018.01/class4_snr10.hdf5`.
+Wrote (SNR 12, class 4) data to `2018.01/class4_snr12.hdf5`.
+Wrote (SNR 14, class 4) data to `2018.01/class4_snr14.hdf5`.
+Wrote (SNR 16, class 4) data to `2018.01/class4_snr16.hdf5`.
+Wrote (SNR 18, class 4) data to `2018.01/class4_snr18.hdf5`.
+Wrote (SNR 20, class 4) data to `2018.01/class4_snr20.hdf5`.
+Wrote (SNR 22, class 4) data to `2018.01/class4_snr22.hdf5`.
+Wrote (SNR 24, class 4) data to `2018.01/class4_snr24.hdf5`.
+Wrote (SNR 26, class 4) data to `2018.01/class4_snr26.hdf5`.
+Wrote (SNR 28, class 4) data to `2018.01/class4_snr28.hdf5`.
+Wrote (SNR 30, class 4) data to `2018.01/class4_snr30.hdf5`.
+Wrote (SNR -26, class 5) data to `2018.01/class5_snr-26.hdf5`.
+Wrote (SNR -24, class 5) data to `2018.01/class5_snr-24.hdf5`.
+Wrote (SNR -22, class 5) data to `2018.01/class5_snr-22.hdf5`.
+Wrote (SNR -20, class 5) data to `2018.01/class5_snr-20.hdf5`.
+Wrote (SNR -18, class 5) data to `2018.01/class5_snr-18.hdf5`.
+Wrote (SNR -16, class 5) data to `2018.01/class5_snr-16.hdf5`.
+Wrote (SNR -14, class 5) data to `2018.01/class5_snr-14.hdf5`.
+Wrote (SNR -12, class 5) data to `2018.01/class5_snr-12.hdf5`.
+Wrote (SNR -10, class 5) data to `2018.01/class5_snr-10.hdf5`.
+Wrote (SNR -8, class 5) data to `2018.01/class5_snr-8.hdf5`.
+Wrote (SNR -6, class 5) data to `2018.01/class5_snr-6.hdf5`.
+Wrote (SNR -4, class 5) data to `2018.01/class5_snr-4.hdf5`.
+Wrote (SNR -2, class 5) data to `2018.01/class5_snr-2.hdf5`.
+Wrote (SNR 0, class 5) data to `2018.01/class5_snr0.hdf5`.
+Wrote (SNR 2, class 5) data to `2018.01/class5_snr2.hdf5`.
+Wrote (SNR 4, class 5) data to `2018.01/class5_snr4.hdf5`.
+Wrote (SNR 6, class 5) data to `2018.01/class5_snr6.hdf5`.
+Wrote (SNR 8, class 5) data to `2018.01/class5_snr8.hdf5`.
+Wrote (SNR 10, class 5) data to `2018.01/class5_snr10.hdf5`.
+Wrote (SNR 12, class 5) data to `2018.01/class5_snr12.hdf5`.
+Wrote (SNR 14, class 5) data to `2018.01/class5_snr14.hdf5`.
+Wrote (SNR 16, class 5) data to `2018.01/class5_snr16.hdf5`.
+Wrote (SNR 18, class 5) data to `2018.01/class5_snr18.hdf5`.
+Wrote (SNR 20, class 5) data to `2018.01/class5_snr20.hdf5`.
+Wrote (SNR 22, class 5) data to `2018.01/class5_snr22.hdf5`.
+Wrote (SNR 24, class 5) data to `2018.01/class5_snr24.hdf5`.
+Wrote (SNR 26, class 5) data to `2018.01/class5_snr26.hdf5`.
+Wrote (SNR 28, class 5) data to `2018.01/class5_snr28.hdf5`.
+Wrote (SNR 30, class 5) data to `2018.01/class5_snr30.hdf5`.
+Wrote (SNR -26, class 6) data to `2018.01/class6_snr-26.hdf5`.
+Wrote (SNR -24, class 6) data to `2018.01/class6_snr-24.hdf5`.
+Wrote (SNR -22, class 6) data to `2018.01/class6_snr-22.hdf5`.
+Wrote (SNR -20, class 6) data to `2018.01/class6_snr-20.hdf5`.
+Wrote (SNR -18, class 6) data to `2018.01/class6_snr-18.hdf5`.
+Wrote (SNR -16, class 6) data to `2018.01/class6_snr-16.hdf5`.
+Wrote (SNR -14, class 6) data to `2018.01/class6_snr-14.hdf5`.
+Wrote (SNR -12, class 6) data to `2018.01/class6_snr-12.hdf5`.
+Wrote (SNR -10, class 6) data to `2018.01/class6_snr-10.hdf5`.
+Wrote (SNR -8, class 6) data to `2018.01/class6_snr-8.hdf5`.
+Wrote (SNR -6, class 6) data to `2018.01/class6_snr-6.hdf5`.
+Wrote (SNR -4, class 6) data to `2018.01/class6_snr-4.hdf5`.
+Wrote (SNR -2, class 6) data to `2018.01/class6_snr-2.hdf5`.
+Wrote (SNR 0, class 6) data to `2018.01/class6_snr0.hdf5`.
+Wrote (SNR 2, class 6) data to `2018.01/class6_snr2.hdf5`.
+Wrote (SNR 4, class 6) data to `2018.01/class6_snr4.hdf5`.
+Wrote (SNR 6, class 6) data to `2018.01/class6_snr6.hdf5`.
+Wrote (SNR 8, class 6) data to `2018.01/class6_snr8.hdf5`.
+Wrote (SNR 10, class 6) data to `2018.01/class6_snr10.hdf5`.
+Wrote (SNR 12, class 6) data to `2018.01/class6_snr12.hdf5`.
+Wrote (SNR 14, class 6) data to `2018.01/class6_snr14.hdf5`.
+Wrote (SNR 16, class 6) data to `2018.01/class6_snr16.hdf5`.
+Wrote (SNR 18, class 6) data to `2018.01/class6_snr18.hdf5`.
+Wrote (SNR 20, class 6) data to `2018.01/class6_snr20.hdf5`.
+Wrote (SNR 22, class 6) data to `2018.01/class6_snr22.hdf5`.
+Wrote (SNR 24, class 6) data to `2018.01/class6_snr24.hdf5`.
+Wrote (SNR 26, class 6) data to `2018.01/class6_snr26.hdf5`.
+Wrote (SNR 28, class 6) data to `2018.01/class6_snr28.hdf5`.
+Wrote (SNR 30, class 6) data to `2018.01/class6_snr30.hdf5`.
+Wrote (SNR -26, class 7) data to `2018.01/class7_snr-26.hdf5`.
+Wrote (SNR -24, class 7) data to `2018.01/class7_snr-24.hdf5`.
+Wrote (SNR -22, class 7) data to `2018.01/class7_snr-22.hdf5`.
+Wrote (SNR -20, class 7) data to `2018.01/class7_snr-20.hdf5`.
+Wrote (SNR -18, class 7) data to `2018.01/class7_snr-18.hdf5`.
+Wrote (SNR -16, class 7) data to `2018.01/class7_snr-16.hdf5`.
+Wrote (SNR -14, class 7) data to `2018.01/class7_snr-14.hdf5`.
+Wrote (SNR -12, class 7) data to `2018.01/class7_snr-12.hdf5`.
+Wrote (SNR -10, class 7) data to `2018.01/class7_snr-10.hdf5`.
+Wrote (SNR -8, class 7) data to `2018.01/class7_snr-8.hdf5`.
+Wrote (SNR -6, class 7) data to `2018.01/class7_snr-6.hdf5`.
+Wrote (SNR -4, class 7) data to `2018.01/class7_snr-4.hdf5`.
+Wrote (SNR -2, class 7) data to `2018.01/class7_snr-2.hdf5`.
+Wrote (SNR 0, class 7) data to `2018.01/class7_snr0.hdf5`.
+Wrote (SNR 2, class 7) data to `2018.01/class7_snr2.hdf5`.
+Wrote (SNR 4, class 7) data to `2018.01/class7_snr4.hdf5`.
+Wrote (SNR 6, class 7) data to `2018.01/class7_snr6.hdf5`.
+Wrote (SNR 8, class 7) data to `2018.01/class7_snr8.hdf5`.
+Wrote (SNR 10, class 7) data to `2018.01/class7_snr10.hdf5`.
+Wrote (SNR 12, class 7) data to `2018.01/class7_snr12.hdf5`.
+Wrote (SNR 14, class 7) data to `2018.01/class7_snr14.hdf5`.
+Wrote (SNR 16, class 7) data to `2018.01/class7_snr16.hdf5`.
+Wrote (SNR 18, class 7) data to `2018.01/class7_snr18.hdf5`.
+Wrote (SNR 20, class 7) data to `2018.01/class7_snr20.hdf5`.
+Wrote (SNR 22, class 7) data to `2018.01/class7_snr22.hdf5`.
+Wrote (SNR 24, class 7) data to `2018.01/class7_snr24.hdf5`.
+Wrote (SNR 26, class 7) data to `2018.01/class7_snr26.hdf5`.
+Wrote (SNR 28, class 7) data to `2018.01/class7_snr28.hdf5`.
+Wrote (SNR 30, class 7) data to `2018.01/class7_snr30.hdf5`.
+Wrote (SNR -26, class 8) data to `2018.01/class8_snr-26.hdf5`.
+Wrote (SNR -24, class 8) data to `2018.01/class8_snr-24.hdf5`.
+Wrote (SNR -22, class 8) data to `2018.01/class8_snr-22.hdf5`.
+Wrote (SNR -20, class 8) data to `2018.01/class8_snr-20.hdf5`.
+Wrote (SNR -18, class 8) data to `2018.01/class8_snr-18.hdf5`.
+Wrote (SNR -16, class 8) data to `2018.01/class8_snr-16.hdf5`.
+Wrote (SNR -14, class 8) data to `2018.01/class8_snr-14.hdf5`.
+Wrote (SNR -12, class 8) data to `2018.01/class8_snr-12.hdf5`.
+Wrote (SNR -10, class 8) data to `2018.01/class8_snr-10.hdf5`.
+Wrote (SNR -8, class 8) data to `2018.01/class8_snr-8.hdf5`.
+Wrote (SNR -6, class 8) data to `2018.01/class8_snr-6.hdf5`.
+Wrote (SNR -4, class 8) data to `2018.01/class8_snr-4.hdf5`.
+Wrote (SNR -2, class 8) data to `2018.01/class8_snr-2.hdf5`.
+Wrote (SNR 0, class 8) data to `2018.01/class8_snr0.hdf5`.
+Wrote (SNR 2, class 8) data to `2018.01/class8_snr2.hdf5`.
+Wrote (SNR 4, class 8) data to `2018.01/class8_snr4.hdf5`.
+Wrote (SNR 6, class 8) data to `2018.01/class8_snr6.hdf5`.
+Wrote (SNR 8, class 8) data to `2018.01/class8_snr8.hdf5`.
+Wrote (SNR 10, class 8) data to `2018.01/class8_snr10.hdf5`.
+Wrote (SNR 12, class 8) data to `2018.01/class8_snr12.hdf5`.
+Wrote (SNR 14, class 8) data to `2018.01/class8_snr14.hdf5`.
+Wrote (SNR 16, class 8) data to `2018.01/class8_snr16.hdf5`.
+Wrote (SNR 18, class 8) data to `2018.01/class8_snr18.hdf5`.
+Wrote (SNR 20, class 8) data to `2018.01/class8_snr20.hdf5`.
+Wrote (SNR 22, class 8) data to `2018.01/class8_snr22.hdf5`.
+Wrote (SNR 24, class 8) data to `2018.01/class8_snr24.hdf5`.
+Wrote (SNR 26, class 8) data to `2018.01/class8_snr26.hdf5`.
+Wrote (SNR 28, class 8) data to `2018.01/class8_snr28.hdf5`.
+Wrote (SNR 30, class 8) data to `2018.01/class8_snr30.hdf5`.
+Wrote (SNR -26, class 9) data to `2018.01/class9_snr-26.hdf5`.
+Wrote (SNR -24, class 9) data to `2018.01/class9_snr-24.hdf5`.
+Wrote (SNR -22, class 9) data to `2018.01/class9_snr-22.hdf5`.
+Wrote (SNR -20, class 9) data to `2018.01/class9_snr-20.hdf5`.
+Wrote (SNR -18, class 9) data to `2018.01/class9_snr-18.hdf5`.
+Wrote (SNR -16, class 9) data to `2018.01/class9_snr-16.hdf5`.
+Wrote (SNR -14, class 9) data to `2018.01/class9_snr-14.hdf5`.
+Wrote (SNR -12, class 9) data to `2018.01/class9_snr-12.hdf5`.
+Wrote (SNR -10, class 9) data to `2018.01/class9_snr-10.hdf5`.
+Wrote (SNR -8, class 9) data to `2018.01/class9_snr-8.hdf5`.
+Wrote (SNR -6, class 9) data to `2018.01/class9_snr-6.hdf5`.
+Wrote (SNR -4, class 9) data to `2018.01/class9_snr-4.hdf5`.
+Wrote (SNR -2, class 9) data to `2018.01/class9_snr-2.hdf5`.
+Wrote (SNR 0, class 9) data to `2018.01/class9_snr0.hdf5`.
+Wrote (SNR 2, class 9) data to `2018.01/class9_snr2.hdf5`.
+Wrote (SNR 4, class 9) data to `2018.01/class9_snr4.hdf5`.
+Wrote (SNR 6, class 9) data to `2018.01/class9_snr6.hdf5`.
+Wrote (SNR 8, class 9) data to `2018.01/class9_snr8.hdf5`.
+Wrote (SNR 10, class 9) data to `2018.01/class9_snr10.hdf5`.
+Wrote (SNR 12, class 9) data to `2018.01/class9_snr12.hdf5`.
+Wrote (SNR 14, class 9) data to `2018.01/class9_snr14.hdf5`.
+Wrote (SNR 16, class 9) data to `2018.01/class9_snr16.hdf5`.
+Wrote (SNR 18, class 9) data to `2018.01/class9_snr18.hdf5`.
+Wrote (SNR 20, class 9) data to `2018.01/class9_snr20.hdf5`.
+Wrote (SNR 22, class 9) data to `2018.01/class9_snr22.hdf5`.
+Wrote (SNR 24, class 9) data to `2018.01/class9_snr24.hdf5`.
+Wrote (SNR 26, class 9) data to `2018.01/class9_snr26.hdf5`.
+Wrote (SNR 28, class 9) data to `2018.01/class9_snr28.hdf5`.
+Wrote (SNR 30, class 9) data to `2018.01/class9_snr30.hdf5`.
+Wrote (SNR -26, class 10) data to `2018.01/class10_snr-26.hdf5`.
+Wrote (SNR -24, class 10) data to `2018.01/class10_snr-24.hdf5`.
+Wrote (SNR -22, class 10) data to `2018.01/class10_snr-22.hdf5`.
+Wrote (SNR -20, class 10) data to `2018.01/class10_snr-20.hdf5`.
+Wrote (SNR -18, class 10) data to `2018.01/class10_snr-18.hdf5`.
+Wrote (SNR -16, class 10) data to `2018.01/class10_snr-16.hdf5`.
+Wrote (SNR -14, class 10) data to `2018.01/class10_snr-14.hdf5`.
+Wrote (SNR -12, class 10) data to `2018.01/class10_snr-12.hdf5`.
+Wrote (SNR -10, class 10) data to `2018.01/class10_snr-10.hdf5`.
+Wrote (SNR -8, class 10) data to `2018.01/class10_snr-8.hdf5`.
+Wrote (SNR -6, class 10) data to `2018.01/class10_snr-6.hdf5`.
+Wrote (SNR -4, class 10) data to `2018.01/class10_snr-4.hdf5`.
+Wrote (SNR -2, class 10) data to `2018.01/class10_snr-2.hdf5`.
+Wrote (SNR 0, class 10) data to `2018.01/class10_snr0.hdf5`.
+Wrote (SNR 2, class 10) data to `2018.01/class10_snr2.hdf5`.
+Wrote (SNR 4, class 10) data to `2018.01/class10_snr4.hdf5`.
+Wrote (SNR 6, class 10) data to `2018.01/class10_snr6.hdf5`.
+Wrote (SNR 8, class 10) data to `2018.01/class10_snr8.hdf5`.
+Wrote (SNR 10, class 10) data to `2018.01/class10_snr10.hdf5`.
+Wrote (SNR 12, class 10) data to `2018.01/class10_snr12.hdf5`.
+Wrote (SNR 14, class 10) data to `2018.01/class10_snr14.hdf5`.
+Wrote (SNR 16, class 10) data to `2018.01/class10_snr16.hdf5`.
+Wrote (SNR 18, class 10) data to `2018.01/class10_snr18.hdf5`.
+Wrote (SNR 20, class 10) data to `2018.01/class10_snr20.hdf5`.
+Wrote (SNR 22, class 10) data to `2018.01/class10_snr22.hdf5`.
+Wrote (SNR 24, class 10) data to `2018.01/class10_snr24.hdf5`.
+Wrote (SNR 26, class 10) data to `2018.01/class10_snr26.hdf5`.
+Wrote (SNR 28, class 10) data to `2018.01/class10_snr28.hdf5`.
+Wrote (SNR 30, class 10) data to `2018.01/class10_snr30.hdf5`.
+Wrote (SNR -26, class 11) data to `2018.01/class11_snr-26.hdf5`.
+Wrote (SNR -24, class 11) data to `2018.01/class11_snr-24.hdf5`.
+Wrote (SNR -22, class 11) data to `2018.01/class11_snr-22.hdf5`.
+Wrote (SNR -20, class 11) data to `2018.01/class11_snr-20.hdf5`.
+Wrote (SNR -18, class 11) data to `2018.01/class11_snr-18.hdf5`.
+Wrote (SNR -16, class 11) data to `2018.01/class11_snr-16.hdf5`.
+Wrote (SNR -14, class 11) data to `2018.01/class11_snr-14.hdf5`.
+Wrote (SNR -12, class 11) data to `2018.01/class11_snr-12.hdf5`.
+Wrote (SNR -10, class 11) data to `2018.01/class11_snr-10.hdf5`.
+Wrote (SNR -8, class 11) data to `2018.01/class11_snr-8.hdf5`.
+Wrote (SNR -6, class 11) data to `2018.01/class11_snr-6.hdf5`.
+Wrote (SNR -4, class 11) data to `2018.01/class11_snr-4.hdf5`.
+Wrote (SNR -2, class 11) data to `2018.01/class11_snr-2.hdf5`.
+Wrote (SNR 0, class 11) data to `2018.01/class11_snr0.hdf5`.
+Wrote (SNR 2, class 11) data to `2018.01/class11_snr2.hdf5`.
+Wrote (SNR 4, class 11) data to `2018.01/class11_snr4.hdf5`.
+Wrote (SNR 6, class 11) data to `2018.01/class11_snr6.hdf5`.
+Wrote (SNR 8, class 11) data to `2018.01/class11_snr8.hdf5`.
+Wrote (SNR 10, class 11) data to `2018.01/class11_snr10.hdf5`.
+Wrote (SNR 12, class 11) data to `2018.01/class11_snr12.hdf5`.
+Wrote (SNR 14, class 11) data to `2018.01/class11_snr14.hdf5`.
+Wrote (SNR 16, class 11) data to `2018.01/class11_snr16.hdf5`.
+Wrote (SNR 18, class 11) data to `2018.01/class11_snr18.hdf5`.
+Wrote (SNR 20, class 11) data to `2018.01/class11_snr20.hdf5`.
+Wrote (SNR 22, class 11) data to `2018.01/class11_snr22.hdf5`.
+Wrote (SNR 24, class 11) data to `2018.01/class11_snr24.hdf5`.
+Wrote (SNR 26, class 11) data to `2018.01/class11_snr26.hdf5`.
+Wrote (SNR 28, class 11) data to `2018.01/class11_snr28.hdf5`.
+Wrote (SNR 30, class 11) data to `2018.01/class11_snr30.hdf5`.
+Wrote (SNR -26, class 12) data to `2018.01/class12_snr-26.hdf5`.
+Wrote (SNR -24, class 12) data to `2018.01/class12_snr-24.hdf5`.
+Wrote (SNR -22, class 12) data to `2018.01/class12_snr-22.hdf5`.
+Wrote (SNR -20, class 12) data to `2018.01/class12_snr-20.hdf5`.
+Wrote (SNR -18, class 12) data to `2018.01/class12_snr-18.hdf5`.
+Wrote (SNR -16, class 12) data to `2018.01/class12_snr-16.hdf5`.
+Wrote (SNR -14, class 12) data to `2018.01/class12_snr-14.hdf5`.
+Wrote (SNR -12, class 12) data to `2018.01/class12_snr-12.hdf5`.
+Wrote (SNR -10, class 12) data to `2018.01/class12_snr-10.hdf5`.
+Wrote (SNR -8, class 12) data to `2018.01/class12_snr-8.hdf5`.
+Wrote (SNR -6, class 12) data to `2018.01/class12_snr-6.hdf5`.
+Wrote (SNR -4, class 12) data to `2018.01/class12_snr-4.hdf5`.
+Wrote (SNR -2, class 12) data to `2018.01/class12_snr-2.hdf5`.
+Wrote (SNR 0, class 12) data to `2018.01/class12_snr0.hdf5`.
+Wrote (SNR 2, class 12) data to `2018.01/class12_snr2.hdf5`.
+Wrote (SNR 4, class 12) data to `2018.01/class12_snr4.hdf5`.
+Wrote (SNR 6, class 12) data to `2018.01/class12_snr6.hdf5`.
+Wrote (SNR 8, class 12) data to `2018.01/class12_snr8.hdf5`.
+Wrote (SNR 10, class 12) data to `2018.01/class12_snr10.hdf5`.
+Wrote (SNR 12, class 12) data to `2018.01/class12_snr12.hdf5`.
+Wrote (SNR 14, class 12) data to `2018.01/class12_snr14.hdf5`.
+Wrote (SNR 16, class 12) data to `2018.01/class12_snr16.hdf5`.
+Wrote (SNR 18, class 12) data to `2018.01/class12_snr18.hdf5`.
+Wrote (SNR 20, class 12) data to `2018.01/class12_snr20.hdf5`.
+Wrote (SNR 22, class 12) data to `2018.01/class12_snr22.hdf5`.
+Wrote (SNR 24, class 12) data to `2018.01/class12_snr24.hdf5`.
+Wrote (SNR 26, class 12) data to `2018.01/class12_snr26.hdf5`.
+Wrote (SNR 28, class 12) data to `2018.01/class12_snr28.hdf5`.
+Wrote (SNR 30, class 12) data to `2018.01/class12_snr30.hdf5`.
+Wrote (SNR -26, class 13) data to `2018.01/class13_snr-26.hdf5`.
+Wrote (SNR -24, class 13) data to `2018.01/class13_snr-24.hdf5`.
+Wrote (SNR -22, class 13) data to `2018.01/class13_snr-22.hdf5`.
+Wrote (SNR -20, class 13) data to `2018.01/class13_snr-20.hdf5`.
+Wrote (SNR -18, class 13) data to `2018.01/class13_snr-18.hdf5`.
+Wrote (SNR -16, class 13) data to `2018.01/class13_snr-16.hdf5`.
+Wrote (SNR -14, class 13) data to `2018.01/class13_snr-14.hdf5`.
+Wrote (SNR -12, class 13) data to `2018.01/class13_snr-12.hdf5`.
+Wrote (SNR -10, class 13) data to `2018.01/class13_snr-10.hdf5`.
+Wrote (SNR -8, class 13) data to `2018.01/class13_snr-8.hdf5`.
+Wrote (SNR -6, class 13) data to `2018.01/class13_snr-6.hdf5`.
+Wrote (SNR -4, class 13) data to `2018.01/class13_snr-4.hdf5`.
+Wrote (SNR -2, class 13) data to `2018.01/class13_snr-2.hdf5`.
+Wrote (SNR 0, class 13) data to `2018.01/class13_snr0.hdf5`.
+Wrote (SNR 2, class 13) data to `2018.01/class13_snr2.hdf5`.
+Wrote (SNR 4, class 13) data to `2018.01/class13_snr4.hdf5`.
+Wrote (SNR 6, class 13) data to `2018.01/class13_snr6.hdf5`.
+Wrote (SNR 8, class 13) data to `2018.01/class13_snr8.hdf5`.
+Wrote (SNR 10, class 13) data to `2018.01/class13_snr10.hdf5`.
+Wrote (SNR 12, class 13) data to `2018.01/class13_snr12.hdf5`.
+Wrote (SNR 14, class 13) data to `2018.01/class13_snr14.hdf5`.
+Wrote (SNR 16, class 13) data to `2018.01/class13_snr16.hdf5`.
+Wrote (SNR 18, class 13) data to `2018.01/class13_snr18.hdf5`.
+Wrote (SNR 20, class 13) data to `2018.01/class13_snr20.hdf5`.
+Wrote (SNR 22, class 13) data to `2018.01/class13_snr22.hdf5`.
+Wrote (SNR 24, class 13) data to `2018.01/class13_snr24.hdf5`.
+Wrote (SNR 26, class 13) data to `2018.01/class13_snr26.hdf5`.
+Wrote (SNR 28, class 13) data to `2018.01/class13_snr28.hdf5`.
+Wrote (SNR 30, class 13) data to `2018.01/class13_snr30.hdf5`.
+Wrote (SNR -26, class 14) data to `2018.01/class14_snr-26.hdf5`.
+Wrote (SNR -24, class 14) data to `2018.01/class14_snr-24.hdf5`.
+Wrote (SNR -22, class 14) data to `2018.01/class14_snr-22.hdf5`.
+Wrote (SNR -20, class 14) data to `2018.01/class14_snr-20.hdf5`.
+Wrote (SNR -18, class 14) data to `2018.01/class14_snr-18.hdf5`.
+Wrote (SNR -16, class 14) data to `2018.01/class14_snr-16.hdf5`.
+Wrote (SNR -14, class 14) data to `2018.01/class14_snr-14.hdf5`.
+Wrote (SNR -12, class 14) data to `2018.01/class14_snr-12.hdf5`.
+Wrote (SNR -10, class 14) data to `2018.01/class14_snr-10.hdf5`.
+Wrote (SNR -8, class 14) data to `2018.01/class14_snr-8.hdf5`.
+Wrote (SNR -6, class 14) data to `2018.01/class14_snr-6.hdf5`.
+Wrote (SNR -4, class 14) data to `2018.01/class14_snr-4.hdf5`.
+Wrote (SNR -2, class 14) data to `2018.01/class14_snr-2.hdf5`.
+Wrote (SNR 0, class 14) data to `2018.01/class14_snr0.hdf5`.
+Wrote (SNR 2, class 14) data to `2018.01/class14_snr2.hdf5`.
+Wrote (SNR 4, class 14) data to `2018.01/class14_snr4.hdf5`.
+Wrote (SNR 6, class 14) data to `2018.01/class14_snr6.hdf5`.
+Wrote (SNR 8, class 14) data to `2018.01/class14_snr8.hdf5`.
+Wrote (SNR 10, class 14) data to `2018.01/class14_snr10.hdf5`.
+Wrote (SNR 12, class 14) data to `2018.01/class14_snr12.hdf5`.
+Wrote (SNR 14, class 14) data to `2018.01/class14_snr14.hdf5`.
+Wrote (SNR 16, class 14) data to `2018.01/class14_snr16.hdf5`.
+Wrote (SNR 18, class 14) data to `2018.01/class14_snr18.hdf5`.
+Wrote (SNR 20, class 14) data to `2018.01/class14_snr20.hdf5`.
+Wrote (SNR 22, class 14) data to `2018.01/class14_snr22.hdf5`.
+Wrote (SNR 24, class 14) data to `2018.01/class14_snr24.hdf5`.
+Wrote (SNR 26, class 14) data to `2018.01/class14_snr26.hdf5`.
+Wrote (SNR 28, class 14) data to `2018.01/class14_snr28.hdf5`.
+Wrote (SNR 30, class 14) data to `2018.01/class14_snr30.hdf5`.
+Wrote (SNR -26, class 15) data to `2018.01/class15_snr-26.hdf5`.
+Wrote (SNR -24, class 15) data to `2018.01/class15_snr-24.hdf5`.
+Wrote (SNR -22, class 15) data to `2018.01/class15_snr-22.hdf5`.
+Wrote (SNR -20, class 15) data to `2018.01/class15_snr-20.hdf5`.
+Wrote (SNR -18, class 15) data to `2018.01/class15_snr-18.hdf5`.
+Wrote (SNR -16, class 15) data to `2018.01/class15_snr-16.hdf5`.
+Wrote (SNR -14, class 15) data to `2018.01/class15_snr-14.hdf5`.
+Wrote (SNR -12, class 15) data to `2018.01/class15_snr-12.hdf5`.
+Wrote (SNR -10, class 15) data to `2018.01/class15_snr-10.hdf5`.
+Wrote (SNR -8, class 15) data to `2018.01/class15_snr-8.hdf5`.
+Wrote (SNR -6, class 15) data to `2018.01/class15_snr-6.hdf5`.
+Wrote (SNR -4, class 15) data to `2018.01/class15_snr-4.hdf5`.
+Wrote (SNR -2, class 15) data to `2018.01/class15_snr-2.hdf5`.
+Wrote (SNR 0, class 15) data to `2018.01/class15_snr0.hdf5`.
+Wrote (SNR 2, class 15) data to `2018.01/class15_snr2.hdf5`.
+Wrote (SNR 4, class 15) data to `2018.01/class15_snr4.hdf5`.
+Wrote (SNR 6, class 15) data to `2018.01/class15_snr6.hdf5`.
+Wrote (SNR 8, class 15) data to `2018.01/class15_snr8.hdf5`.
+Wrote (SNR 10, class 15) data to `2018.01/class15_snr10.hdf5`.
+Wrote (SNR 12, class 15) data to `2018.01/class15_snr12.hdf5`.
+Wrote (SNR 14, class 15) data to `2018.01/class15_snr14.hdf5`.
+Wrote (SNR 16, class 15) data to `2018.01/class15_snr16.hdf5`.
+Wrote (SNR 18, class 15) data to `2018.01/class15_snr18.hdf5`.
+Wrote (SNR 20, class 15) data to `2018.01/class15_snr20.hdf5`.
+Wrote (SNR 22, class 15) data to `2018.01/class15_snr22.hdf5`.
+Wrote (SNR 24, class 15) data to `2018.01/class15_snr24.hdf5`.
+Wrote (SNR 26, class 15) data to `2018.01/class15_snr26.hdf5`.
+Wrote (SNR 28, class 15) data to `2018.01/class15_snr28.hdf5`.
+Wrote (SNR 30, class 15) data to `2018.01/class15_snr30.hdf5`.
+Wrote (SNR -26, class 16) data to `2018.01/class16_snr-26.hdf5`.
+Wrote (SNR -24, class 16) data to `2018.01/class16_snr-24.hdf5`.
+Wrote (SNR -22, class 16) data to `2018.01/class16_snr-22.hdf5`.
+Wrote (SNR -20, class 16) data to `2018.01/class16_snr-20.hdf5`.
+Wrote (SNR -18, class 16) data to `2018.01/class16_snr-18.hdf5`.
+Wrote (SNR -16, class 16) data to `2018.01/class16_snr-16.hdf5`.
+Wrote (SNR -14, class 16) data to `2018.01/class16_snr-14.hdf5`.
+Wrote (SNR -12, class 16) data to `2018.01/class16_snr-12.hdf5`.
+Wrote (SNR -10, class 16) data to `2018.01/class16_snr-10.hdf5`.
+Wrote (SNR -8, class 16) data to `2018.01/class16_snr-8.hdf5`.
+Wrote (SNR -6, class 16) data to `2018.01/class16_snr-6.hdf5`.
+Wrote (SNR -4, class 16) data to `2018.01/class16_snr-4.hdf5`.
+Wrote (SNR -2, class 16) data to `2018.01/class16_snr-2.hdf5`.
+Wrote (SNR 0, class 16) data to `2018.01/class16_snr0.hdf5`.
+Wrote (SNR 2, class 16) data to `2018.01/class16_snr2.hdf5`.
+Wrote (SNR 4, class 16) data to `2018.01/class16_snr4.hdf5`.
+Wrote (SNR 6, class 16) data to `2018.01/class16_snr6.hdf5`.
+Wrote (SNR 8, class 16) data to `2018.01/class16_snr8.hdf5`.
+Wrote (SNR 10, class 16) data to `2018.01/class16_snr10.hdf5`.
+Wrote (SNR 12, class 16) data to `2018.01/class16_snr12.hdf5`.
+Wrote (SNR 14, class 16) data to `2018.01/class16_snr14.hdf5`.
+Wrote (SNR 16, class 16) data to `2018.01/class16_snr16.hdf5`.
+Wrote (SNR 18, class 16) data to `2018.01/class16_snr18.hdf5`.
+Wrote (SNR 20, class 16) data to `2018.01/class16_snr20.hdf5`.
+Wrote (SNR 22, class 16) data to `2018.01/class16_snr22.hdf5`.
+Wrote (SNR 24, class 16) data to `2018.01/class16_snr24.hdf5`.
+Wrote (SNR 26, class 16) data to `2018.01/class16_snr26.hdf5`.
+Wrote (SNR 28, class 16) data to `2018.01/class16_snr28.hdf5`.
+Wrote (SNR 30, class 16) data to `2018.01/class16_snr30.hdf5`.
+Wrote (SNR -26, class 17) data to `2018.01/class17_snr-26.hdf5`.
+Wrote (SNR -24, class 17) data to `2018.01/class17_snr-24.hdf5`.
+Wrote (SNR -22, class 17) data to `2018.01/class17_snr-22.hdf5`.
+Wrote (SNR -20, class 17) data to `2018.01/class17_snr-20.hdf5`.
+Wrote (SNR -18, class 17) data to `2018.01/class17_snr-18.hdf5`.
+Wrote (SNR -16, class 17) data to `2018.01/class17_snr-16.hdf5`.
+Wrote (SNR -14, class 17) data to `2018.01/class17_snr-14.hdf5`.
+Wrote (SNR -12, class 17) data to `2018.01/class17_snr-12.hdf5`.
+Wrote (SNR -10, class 17) data to `2018.01/class17_snr-10.hdf5`.
+Wrote (SNR -8, class 17) data to `2018.01/class17_snr-8.hdf5`.
+Wrote (SNR -6, class 17) data to `2018.01/class17_snr-6.hdf5`.
+Wrote (SNR -4, class 17) data to `2018.01/class17_snr-4.hdf5`.
+Wrote (SNR -2, class 17) data to `2018.01/class17_snr-2.hdf5`.
+Wrote (SNR 0, class 17) data to `2018.01/class17_snr0.hdf5`.
+Wrote (SNR 2, class 17) data to `2018.01/class17_snr2.hdf5`.
+Wrote (SNR 4, class 17) data to `2018.01/class17_snr4.hdf5`.
+Wrote (SNR 6, class 17) data to `2018.01/class17_snr6.hdf5`.
+Wrote (SNR 8, class 17) data to `2018.01/class17_snr8.hdf5`.
+Wrote (SNR 10, class 17) data to `2018.01/class17_snr10.hdf5`.
+Wrote (SNR 12, class 17) data to `2018.01/class17_snr12.hdf5`.
+Wrote (SNR 14, class 17) data to `2018.01/class17_snr14.hdf5`.
+Wrote (SNR 16, class 17) data to `2018.01/class17_snr16.hdf5`.
+Wrote (SNR 18, class 17) data to `2018.01/class17_snr18.hdf5`.
+Wrote (SNR 20, class 17) data to `2018.01/class17_snr20.hdf5`.
+Wrote (SNR 22, class 17) data to `2018.01/class17_snr22.hdf5`.
+Wrote (SNR 24, class 17) data to `2018.01/class17_snr24.hdf5`.
+Wrote (SNR 26, class 17) data to `2018.01/class17_snr26.hdf5`.
+Wrote (SNR 28, class 17) data to `2018.01/class17_snr28.hdf5`.
+Wrote (SNR 30, class 17) data to `2018.01/class17_snr30.hdf5`.
+Wrote (SNR -26, class 18) data to `2018.01/class18_snr-26.hdf5`.
+Wrote (SNR -24, class 18) data to `2018.01/class18_snr-24.hdf5`.
+Wrote (SNR -22, class 18) data to `2018.01/class18_snr-22.hdf5`.
+Wrote (SNR -20, class 18) data to `2018.01/class18_snr-20.hdf5`.
+Wrote (SNR -18, class 18) data to `2018.01/class18_snr-18.hdf5`.
+Wrote (SNR -16, class 18) data to `2018.01/class18_snr-16.hdf5`.
+Wrote (SNR -14, class 18) data to `2018.01/class18_snr-14.hdf5`.
+Wrote (SNR -12, class 18) data to `2018.01/class18_snr-12.hdf5`.
+Wrote (SNR -10, class 18) data to `2018.01/class18_snr-10.hdf5`.
+Wrote (SNR -8, class 18) data to `2018.01/class18_snr-8.hdf5`.
+Wrote (SNR -6, class 18) data to `2018.01/class18_snr-6.hdf5`.
+Wrote (SNR -4, class 18) data to `2018.01/class18_snr-4.hdf5`.
+Wrote (SNR -2, class 18) data to `2018.01/class18_snr-2.hdf5`.
+Wrote (SNR 0, class 18) data to `2018.01/class18_snr0.hdf5`.
+Wrote (SNR 2, class 18) data to `2018.01/class18_snr2.hdf5`.
+Wrote (SNR 4, class 18) data to `2018.01/class18_snr4.hdf5`.
+Wrote (SNR 6, class 18) data to `2018.01/class18_snr6.hdf5`.
+Wrote (SNR 8, class 18) data to `2018.01/class18_snr8.hdf5`.
+Wrote (SNR 10, class 18) data to `2018.01/class18_snr10.hdf5`.
+Wrote (SNR 12, class 18) data to `2018.01/class18_snr12.hdf5`.
+Wrote (SNR 14, class 18) data to `2018.01/class18_snr14.hdf5`.
+Wrote (SNR 16, class 18) data to `2018.01/class18_snr16.hdf5`.
+Wrote (SNR 18, class 18) data to `2018.01/class18_snr18.hdf5`.
+Wrote (SNR 20, class 18) data to `2018.01/class18_snr20.hdf5`.
+Wrote (SNR 22, class 18) data to `2018.01/class18_snr22.hdf5`.
+Wrote (SNR 24, class 18) data to `2018.01/class18_snr24.hdf5`.
+Wrote (SNR 26, class 18) data to `2018.01/class18_snr26.hdf5`.
+Wrote (SNR 28, class 18) data to `2018.01/class18_snr28.hdf5`.
+Wrote (SNR 30, class 18) data to `2018.01/class18_snr30.hdf5`.
+Wrote (SNR -26, class 19) data to `2018.01/class19_snr-26.hdf5`.
+Wrote (SNR -24, class 19) data to `2018.01/class19_snr-24.hdf5`.
+Wrote (SNR -22, class 19) data to `2018.01/class19_snr-22.hdf5`.
+Wrote (SNR -20, class 19) data to `2018.01/class19_snr-20.hdf5`.
+Wrote (SNR -18, class 19) data to `2018.01/class19_snr-18.hdf5`.
+Wrote (SNR -16, class 19) data to `2018.01/class19_snr-16.hdf5`.
+Wrote (SNR -14, class 19) data to `2018.01/class19_snr-14.hdf5`.
+Wrote (SNR -12, class 19) data to `2018.01/class19_snr-12.hdf5`.
+Wrote (SNR -10, class 19) data to `2018.01/class19_snr-10.hdf5`.
+Wrote (SNR -8, class 19) data to `2018.01/class19_snr-8.hdf5`.
+Wrote (SNR -6, class 19) data to `2018.01/class19_snr-6.hdf5`.
+Wrote (SNR -4, class 19) data to `2018.01/class19_snr-4.hdf5`.
+Wrote (SNR -2, class 19) data to `2018.01/class19_snr-2.hdf5`.
+Wrote (SNR 0, class 19) data to `2018.01/class19_snr0.hdf5`.
+Wrote (SNR 2, class 19) data to `2018.01/class19_snr2.hdf5`.
+Wrote (SNR 4, class 19) data to `2018.01/class19_snr4.hdf5`.
+Wrote (SNR 6, class 19) data to `2018.01/class19_snr6.hdf5`.
+Wrote (SNR 8, class 19) data to `2018.01/class19_snr8.hdf5`.
+Wrote (SNR 10, class 19) data to `2018.01/class19_snr10.hdf5`.
+Wrote (SNR 12, class 19) data to `2018.01/class19_snr12.hdf5`.
+Wrote (SNR 14, class 19) data to `2018.01/class19_snr14.hdf5`.
+Wrote (SNR 16, class 19) data to `2018.01/class19_snr16.hdf5`.
+Wrote (SNR 18, class 19) data to `2018.01/class19_snr18.hdf5`.
+Wrote (SNR 20, class 19) data to `2018.01/class19_snr20.hdf5`.
+Wrote (SNR 22, class 19) data to `2018.01/class19_snr22.hdf5`.
+Wrote (SNR 24, class 19) data to `2018.01/class19_snr24.hdf5`.
+Wrote (SNR 26, class 19) data to `2018.01/class19_snr26.hdf5`.
+Wrote (SNR 28, class 19) data to `2018.01/class19_snr28.hdf5`.
+Wrote (SNR 30, class 19) data to `2018.01/class19_snr30.hdf5`.
+Wrote (SNR -26, class 20) data to `2018.01/class20_snr-26.hdf5`.
+Wrote (SNR -24, class 20) data to `2018.01/class20_snr-24.hdf5`.
+Wrote (SNR -22, class 20) data to `2018.01/class20_snr-22.hdf5`.
+Wrote (SNR -20, class 20) data to `2018.01/class20_snr-20.hdf5`.
+Wrote (SNR -18, class 20) data to `2018.01/class20_snr-18.hdf5`.
+Wrote (SNR -16, class 20) data to `2018.01/class20_snr-16.hdf5`.
+Wrote (SNR -14, class 20) data to `2018.01/class20_snr-14.hdf5`.
+Wrote (SNR -12, class 20) data to `2018.01/class20_snr-12.hdf5`.
+Wrote (SNR -10, class 20) data to `2018.01/class20_snr-10.hdf5`.
+Wrote (SNR -8, class 20) data to `2018.01/class20_snr-8.hdf5`.
+Wrote (SNR -6, class 20) data to `2018.01/class20_snr-6.hdf5`.
+Wrote (SNR -4, class 20) data to `2018.01/class20_snr-4.hdf5`.
+Wrote (SNR -2, class 20) data to `2018.01/class20_snr-2.hdf5`.
+Wrote (SNR 0, class 20) data to `2018.01/class20_snr0.hdf5`.
+Wrote (SNR 2, class 20) data to `2018.01/class20_snr2.hdf5`.
+Wrote (SNR 4, class 20) data to `2018.01/class20_snr4.hdf5`.
+Wrote (SNR 6, class 20) data to `2018.01/class20_snr6.hdf5`.
+Wrote (SNR 8, class 20) data to `2018.01/class20_snr8.hdf5`.
+Wrote (SNR 10, class 20) data to `2018.01/class20_snr10.hdf5`.
+Wrote (SNR 12, class 20) data to `2018.01/class20_snr12.hdf5`.
+Wrote (SNR 14, class 20) data to `2018.01/class20_snr14.hdf5`.
+Wrote (SNR 16, class 20) data to `2018.01/class20_snr16.hdf5`.
+Wrote (SNR 18, class 20) data to `2018.01/class20_snr18.hdf5`.
+Wrote (SNR 20, class 20) data to `2018.01/class20_snr20.hdf5`.
+Wrote (SNR 22, class 20) data to `2018.01/class20_snr22.hdf5`.
+Wrote (SNR 24, class 20) data to `2018.01/class20_snr24.hdf5`.
+Wrote (SNR 26, class 20) data to `2018.01/class20_snr26.hdf5`.
+Wrote (SNR 28, class 20) data to `2018.01/class20_snr28.hdf5`.
+Wrote (SNR 30, class 20) data to `2018.01/class20_snr30.hdf5`.
+Wrote (SNR -26, class 21) data to `2018.01/class21_snr-26.hdf5`.
+Wrote (SNR -24, class 21) data to `2018.01/class21_snr-24.hdf5`.
+Wrote (SNR -22, class 21) data to `2018.01/class21_snr-22.hdf5`.
+Wrote (SNR -20, class 21) data to `2018.01/class21_snr-20.hdf5`.
+Wrote (SNR -18, class 21) data to `2018.01/class21_snr-18.hdf5`.
+Wrote (SNR -16, class 21) data to `2018.01/class21_snr-16.hdf5`.
+Wrote (SNR -14, class 21) data to `2018.01/class21_snr-14.hdf5`.
+Wrote (SNR -12, class 21) data to `2018.01/class21_snr-12.hdf5`.
+Wrote (SNR -10, class 21) data to `2018.01/class21_snr-10.hdf5`.
+Wrote (SNR -8, class 21) data to `2018.01/class21_snr-8.hdf5`.
+Wrote (SNR -6, class 21) data to `2018.01/class21_snr-6.hdf5`.
+Wrote (SNR -4, class 21) data to `2018.01/class21_snr-4.hdf5`.
+Wrote (SNR -2, class 21) data to `2018.01/class21_snr-2.hdf5`.
+Wrote (SNR 0, class 21) data to `2018.01/class21_snr0.hdf5`.
+Wrote (SNR 2, class 21) data to `2018.01/class21_snr2.hdf5`.
+Wrote (SNR 4, class 21) data to `2018.01/class21_snr4.hdf5`.
+Wrote (SNR 6, class 21) data to `2018.01/class21_snr6.hdf5`.
+Wrote (SNR 8, class 21) data to `2018.01/class21_snr8.hdf5`.
+Wrote (SNR 10, class 21) data to `2018.01/class21_snr10.hdf5`.
+Wrote (SNR 12, class 21) data to `2018.01/class21_snr12.hdf5`.
+Wrote (SNR 14, class 21) data to `2018.01/class21_snr14.hdf5`.
+Wrote (SNR 16, class 21) data to `2018.01/class21_snr16.hdf5`.
+Wrote (SNR 18, class 21) data to `2018.01/class21_snr18.hdf5`.
+Wrote (SNR 20, class 21) data to `2018.01/class21_snr20.hdf5`.
+Wrote (SNR 22, class 21) data to `2018.01/class21_snr22.hdf5`.
+Wrote (SNR 24, class 21) data to `2018.01/class21_snr24.hdf5`.
+Wrote (SNR 26, class 21) data to `2018.01/class21_snr26.hdf5`.
+Wrote (SNR 28, class 21) data to `2018.01/class21_snr28.hdf5`.
+Wrote (SNR 30, class 21) data to `2018.01/class21_snr30.hdf5`.
+Wrote (SNR -26, class 22) data to `2018.01/class22_snr-26.hdf5`.
+Wrote (SNR -24, class 22) data to `2018.01/class22_snr-24.hdf5`.
+Wrote (SNR -22, class 22) data to `2018.01/class22_snr-22.hdf5`.
+Wrote (SNR -20, class 22) data to `2018.01/class22_snr-20.hdf5`.
+Wrote (SNR -18, class 22) data to `2018.01/class22_snr-18.hdf5`.
+Wrote (SNR -16, class 22) data to `2018.01/class22_snr-16.hdf5`.
+Wrote (SNR -14, class 22) data to `2018.01/class22_snr-14.hdf5`.
+Wrote (SNR -12, class 22) data to `2018.01/class22_snr-12.hdf5`.
+Wrote (SNR -10, class 22) data to `2018.01/class22_snr-10.hdf5`.
+Wrote (SNR -8, class 22) data to `2018.01/class22_snr-8.hdf5`.
+Wrote (SNR -6, class 22) data to `2018.01/class22_snr-6.hdf5`.
+Wrote (SNR -4, class 22) data to `2018.01/class22_snr-4.hdf5`.
+Wrote (SNR -2, class 22) data to `2018.01/class22_snr-2.hdf5`.
+Wrote (SNR 0, class 22) data to `2018.01/class22_snr0.hdf5`.
+Wrote (SNR 2, class 22) data to `2018.01/class22_snr2.hdf5`.
+Wrote (SNR 4, class 22) data to `2018.01/class22_snr4.hdf5`.
+Wrote (SNR 6, class 22) data to `2018.01/class22_snr6.hdf5`.
+Wrote (SNR 8, class 22) data to `2018.01/class22_snr8.hdf5`.
+Wrote (SNR 10, class 22) data to `2018.01/class22_snr10.hdf5`.
+Wrote (SNR 12, class 22) data to `2018.01/class22_snr12.hdf5`.
+Wrote (SNR 14, class 22) data to `2018.01/class22_snr14.hdf5`.
+Wrote (SNR 16, class 22) data to `2018.01/class22_snr16.hdf5`.
+Wrote (SNR 18, class 22) data to `2018.01/class22_snr18.hdf5`.
+Wrote (SNR 20, class 22) data to `2018.01/class22_snr20.hdf5`.
+Wrote (SNR 22, class 22) data to `2018.01/class22_snr22.hdf5`.
+Wrote (SNR 24, class 22) data to `2018.01/class22_snr24.hdf5`.
+Wrote (SNR 26, class 22) data to `2018.01/class22_snr26.hdf5`.
+Wrote (SNR 28, class 22) data to `2018.01/class22_snr28.hdf5`.
+Wrote (SNR 30, class 22) data to `2018.01/class22_snr30.hdf5`.
+Wrote (SNR -26, class 23) data to `2018.01/class23_snr-26.hdf5`.
+Wrote (SNR -24, class 23) data to `2018.01/class23_snr-24.hdf5`.
+Wrote (SNR -22, class 23) data to `2018.01/class23_snr-22.hdf5`.
+Wrote (SNR -20, class 23) data to `2018.01/class23_snr-20.hdf5`.
+Wrote (SNR -18, class 23) data to `2018.01/class23_snr-18.hdf5`.
+Wrote (SNR -16, class 23) data to `2018.01/class23_snr-16.hdf5`.
+Wrote (SNR -14, class 23) data to `2018.01/class23_snr-14.hdf5`.
+Wrote (SNR -12, class 23) data to `2018.01/class23_snr-12.hdf5`.
+Wrote (SNR -10, class 23) data to `2018.01/class23_snr-10.hdf5`.
+Wrote (SNR -8, class 23) data to `2018.01/class23_snr-8.hdf5`.
+Wrote (SNR -6, class 23) data to `2018.01/class23_snr-6.hdf5`.
+Wrote (SNR -4, class 23) data to `2018.01/class23_snr-4.hdf5`.
+Wrote (SNR -2, class 23) data to `2018.01/class23_snr-2.hdf5`.
+Wrote (SNR 0, class 23) data to `2018.01/class23_snr0.hdf5`.
+Wrote (SNR 2, class 23) data to `2018.01/class23_snr2.hdf5`.
+Wrote (SNR 4, class 23) data to `2018.01/class23_snr4.hdf5`.
+Wrote (SNR 6, class 23) data to `2018.01/class23_snr6.hdf5`.
+Wrote (SNR 8, class 23) data to `2018.01/class23_snr8.hdf5`.
+Wrote (SNR 10, class 23) data to `2018.01/class23_snr10.hdf5`.
+Wrote (SNR 12, class 23) data to `2018.01/class23_snr12.hdf5`.
+Wrote (SNR 14, class 23) data to `2018.01/class23_snr14.hdf5`.
+Wrote (SNR 16, class 23) data to `2018.01/class23_snr16.hdf5`.
+Wrote (SNR 18, class 23) data to `2018.01/class23_snr18.hdf5`.
+Wrote (SNR 20, class 23) data to `2018.01/class23_snr20.hdf5`.
+Wrote (SNR 22, class 23) data to `2018.01/class23_snr22.hdf5`.
+Wrote (SNR 24, class 23) data to `2018.01/class23_snr24.hdf5`.
+Wrote (SNR 26, class 23) data to `2018.01/class23_snr26.hdf5`.
+Wrote (SNR 28, class 23) data to `2018.01/class23_snr28.hdf5`.
+Wrote (SNR 30, class 23) data to `2018.01/class23_snr30.hdf5`.
+tcmalloc: large alloc 4710531072 bytes == 0x7883c000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x5127f1 0x549576 0x4bca8a 0x532b86 0x594a96 0x548cc1 0x5127f1 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+[train] dataset size: 575016
+[test] dataset size: 63960
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+tcmalloc: large alloc 4294967296 bytes == 0x7f7cdd700000 @  0x7f812cc1cb6b 0x7f812cc3c379 0x7f80730dd50e 0x7f80730cf7c2 0x7f80ad0401a7 0x7f80ad040449 0x7f80ad0404a6 0x7f80ad5149f8 0x7f80adc01c0f 0x7f80ad9c3656 0x7f80adbe7466 0x7f80ada01367 0x7f80ad511dad 0x7f80add038ea 0x7f80ad7ca5f9 0x7f80adbe8a47 0x7f80ad7ca5f9 0x7f80ae81c4c6 0x7f80ae81ca0d 0x7f80ad837f4a 0x7f80ad50d3c9 0x7f80add9a2c2 0x7f80ad92a813 0x7f81289ce866 0x7f81289cf4ea 0x7f81289cfada 0x7f81286ed275 0x5946b8 0x548cc1 0x51566f 0x549576
+- [TRAINING] Loop 00000, 	 Accuracy [0.015625, 0.90625, 0.203125]
+/usr/local/lib/python3.7/dist-packages/torch/nn/modules/container.py:141: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+tcmalloc: large alloc 4294967296 bytes == 0x7f7cdd700000 @  0x7f812cc1cb6b 0x7f812cc3c379 0x7f80730dd50e 0x7f80730cf7c2 0x7f80ad0401a7 0x7f80ad040449 0x7f80ad0404a6 0x7f80ad5149f8 0x7f80adc01c0f 0x7f80ad9c3656 0x7f80adbe7466 0x7f80ada01367 0x7f80ad511dad 0x7f80add038ea 0x7f80ad7ca5f9 0x7f80adbe8a47 0x7f80ad7ca5f9 0x7f80ae81c4c6 0x7f80ae81ca0d 0x7f80ad837f4a 0x7f80ad50d3c9 0x7f80add9a2c2 0x7f80ad92a813 0x7f81289ce866 0x7f81289cf4ea 0x7f81289cfada 0x7f81286ed275 0x5946b8 0x548cc1 0x51566f 0x549576
+conv0 low:8.31e-06 high:3.11e-06
+conv1 low:0.668 high:0.119
+conv2 low:0.515 high:0.374
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+tcmalloc: large alloc 4294967296 bytes == 0x7f7cdd700000 @  0x7f812cc1cb6b 0x7f812cc3c379 0x7f80730dd50e 0x7f80730cf7c2 0x7f80ad0401a7 0x7f80ad040449 0x7f80ad0404a6 0x7f80ad5149f8 0x7f80adc01c0f 0x7f80ad9c3656 0x7f80adbe7466 0x7f80ada01367 0x7f80ad511dad 0x7f80add038ea 0x7f80ad7ca5f9 0x7f80adbe8a47 0x7f80ad7ca5f9 0x7f80ae81c4c6 0x7f80ae81ca0d 0x7f80ad837f4a 0x7f80ad50d3c9 0x7f80add9a2c2 0x7f80ad92a813 0x7f81289ce866 0x7f81289cf4ea 0x7f81289cfada 0x7f81286ed275 0x5946b8 0x548cc1 0x51566f 0x549576
+--------------------------------------------------------------------------------
+- Saved network parameters to `results/RadioML/May29_18-02-16/parameters_0.pth`.
+--------------------------------------------------------------------------------
+- [TESTING]  Loop 00000, 	 Accuracy [0.        0.0859375 0.1171875], 	 Ref 0.1015625
+- Label train percentages:
+[1.6 6.2 6.2 3.1 1.6 6.2 1.6 1.6 6.2 1.6 3.1 4.7 1.6 6.2 1.6 3.1 9.4 3.1 3.1 4.7 9.4 4.7 3.1 6.2]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+tcmalloc: large alloc 4294967296 bytes == 0x7f7cdd700000 @  0x7f812cc1cb6b 0x7f812cc3c379 0x7f80730dd50e 0x7f80730cf7c2 0x7f80ad0401a7 0x7f80ad040449 0x7f80ad0404a6 0x7f80ad5149f8 0x7f80adc01c0f 0x7f80ad9c3656 0x7f80adbe7466 0x7f80ada01367 0x7f80ad511dad 0x7f80add038ea 0x7f80ad7ca5f9 0x7f80adbe8a47 0x7f80ad7ca5f9 0x7f80ae81c4c6 0x7f80ae81ca0d 0x7f80ad837f4a 0x7f80ad50d3c9 0x7f80add9a2c2 0x7f80ad92a813 0x7f81289ce866 0x7f81289cf4ea 0x7f81289cfada 0x7f81286ed275 0x5946b8 0x548cc1 0x51566f 0x549576
+- [TRAINING] Loop 00001, 	 Accuracy [0.0, 0.96875, 0.234375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+tcmalloc: large alloc 4294967296 bytes == 0x7f7cdd700000 @  0x7f812cc1cb6b 0x7f812cc3c379 0x7f80730dd50e 0x7f80730cf7c2 0x7f80ad0401a7 0x7f80ad040449 0x7f80ad0404a6 0x7f80ad5149f8 0x7f80adc01c0f 0x7f80ad9c3656 0x7f80adbe7466 0x7f80ada01367 0x7f80ad511dad 0x7f80add038ea 0x7f80ad7ca5f9 0x7f80adbe8a47 0x7f80ad7ca5f9 0x7f80ae81c4c6 0x7f80ae81ca0d 0x7f80ad837f4a 0x7f80ad50d3c9 0x7f80add9a2c2 0x7f80ad92a813 0x7f81289ce866 0x7f81289cf4ea 0x7f81289cfada 0x7f81286ed275 0x5946b8 0x548cc1 0x51566f 0x549576
+- [TRAINING] Loop 00002, 	 Accuracy [0.046875, 0.9375, 0.703125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00003, 	 Accuracy [0.0625, 0.96875, 0.40625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00004, 	 Accuracy [0.046875, 0.90625, 0.71875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00005, 	 Accuracy [0.015625, 0.953125, 0.703125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00006, 	 Accuracy [0.046875, 0.953125, 0.65625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00007, 	 Accuracy [0.046875, 0.953125, 0.1875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00008, 	 Accuracy [0.0, 0.90625, 0.875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00009, 	 Accuracy [0.015625, 0.890625, 0.359375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00010, 	 Accuracy [0.0, 0.984375, 0.78125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00011, 	 Accuracy [0.03125, 0.984375, 0.203125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00012, 	 Accuracy [0.015625, 0.953125, 0.4375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00013, 	 Accuracy [0.09375, 0.921875, 0.765625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00014, 	 Accuracy [0.078125, 0.9375, 0.890625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00015, 	 Accuracy [0.046875, 0.953125, 0.765625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00016, 	 Accuracy [0.0, 0.921875, 0.84375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00017, 	 Accuracy [0.046875, 0.859375, 0.734375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00018, 	 Accuracy [0.03125, 0.984375, 0.890625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00019, 	 Accuracy [0.09375, 0.90625, 0.671875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00020, 	 Accuracy [0.0, 0.890625, 0.875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+conv0 low:1.28e-05 high:4.42e-06
+conv1 low:0.858 high:0.124
+conv2 low:0.647 high:0.314
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+--------------------------------------------------------------------------------
+- Saved network parameters to `results/RadioML/May29_18-02-16/parameters_20.pth`.
+--------------------------------------------------------------------------------
+- [TESTING]  Loop 00020, 	 Accuracy [0.       0.109375 0.      ], 	 Ref 0.0
+- Label train percentages:
+[4.7 4.4 3.7 3.1 4.8 4.5 3.9 4.5 4.2 3.8 4.7 3.9 4.  4.2 3.5 4.2 4.9 3.9 3.9 4.2 4.7 4.3 3.1 5. ]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00021, 	 Accuracy [0.03125, 0.90625, 0.46875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00022, 	 Accuracy [0.0, 0.96875, 0.625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00023, 	 Accuracy [0.0625, 0.84375, 0.5]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00024, 	 Accuracy [0.03125, 0.9375, 0.59375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00025, 	 Accuracy [0.0625, 0.859375, 0.3125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00026, 	 Accuracy [0.015625, 0.953125, 0.484375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00027, 	 Accuracy [0.03125, 0.9375, 0.53125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00028, 	 Accuracy [0.046875, 0.9375, 0.65625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00029, 	 Accuracy [0.015625, 0.921875, 0.65625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00030, 	 Accuracy [0.03125, 0.953125, 0.40625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00031, 	 Accuracy [0.015625, 0.953125, 0.140625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00032, 	 Accuracy [0.03125, 0.90625, 0.46875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00033, 	 Accuracy [0.03125, 0.953125, 0.5]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00034, 	 Accuracy [0.015625, 0.9375, 0.3125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00035, 	 Accuracy [0.0625, 0.921875, 0.34375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00036, 	 Accuracy [0.0, 0.953125, 0.109375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00037, 	 Accuracy [0.046875, 0.828125, 0.5625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00038, 	 Accuracy [0.046875, 0.828125, 0.734375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00039, 	 Accuracy [0.046875, 0.984375, 0.984375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00040, 	 Accuracy [0.03125, 0.921875, 1.0]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+conv0 low:6.97e-06 high:3.25e-06
+conv1 low:0.736 high:0.111
+conv2 low:0.675 high:0.268
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+--------------------------------------------------------------------------------
+- Saved network parameters to `results/RadioML/May29_18-02-16/parameters_40.pth`.
+--------------------------------------------------------------------------------
+- [TESTING]  Loop 00040, 	 Accuracy [0.      0.03125 0.     ], 	 Ref 0.0546875
+- Label train percentages:
+[4.5 4.4 3.6 4.2 4.8 4.6 4.1 4.2 4.8 3.8 4.3 4.1 3.7 4.6 3.4 3.6 4.7 3.9 4.  4.3 4.3 4.  3.3 4.7]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00041, 	 Accuracy [0.078125, 0.953125, 0.984375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00042, 	 Accuracy [0.015625, 0.9375, 0.953125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00043, 	 Accuracy [0.015625, 0.984375, 0.890625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00044, 	 Accuracy [0.046875, 0.875, 1.0]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00045, 	 Accuracy [0.0625, 0.921875, 0.984375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00046, 	 Accuracy [0.0625, 0.921875, 0.859375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00047, 	 Accuracy [0.0625, 0.953125, 0.859375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00048, 	 Accuracy [0.015625, 0.921875, 0.921875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00049, 	 Accuracy [0.03125, 0.921875, 0.328125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00050, 	 Accuracy [0.046875, 0.828125, 0.96875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00051, 	 Accuracy [0.03125, 0.984375, 0.609375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00052, 	 Accuracy [0.03125, 0.921875, 0.78125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00053, 	 Accuracy [0.03125, 0.9375, 0.8125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00054, 	 Accuracy [0.046875, 0.921875, 0.90625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00055, 	 Accuracy [0.0625, 0.921875, 0.46875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00056, 	 Accuracy [0.03125, 0.96875, 0.828125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00057, 	 Accuracy [0.03125, 0.890625, 0.53125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00058, 	 Accuracy [0.09375, 0.84375, 0.859375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00059, 	 Accuracy [0.09375, 0.953125, 0.875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00060, 	 Accuracy [0.046875, 0.921875, 0.671875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+conv0 low:8.63e-06 high:3.56e-06
+conv1 low:0.878 high:0.102
+conv2 low:0.588 high:0.345
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+--------------------------------------------------------------------------------
+- Saved network parameters to `results/RadioML/May29_18-02-16/parameters_60.pth`.
+--------------------------------------------------------------------------------
+- [TESTING]  Loop 00060, 	 Accuracy [0.        0.0390625 0.1015625], 	 Ref 0.0703125
+- Label train percentages:
+[4.1 4.5 3.9 4.4 4.4 4.4 4.1 4.1 4.6 4.  4.  4.3 3.7 4.2 3.8 4.1 4.2 4.3 4.2 4.2 4.2 4.3 3.6 4.2]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00061, 	 Accuracy [0.03125, 0.96875, 0.765625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00062, 	 Accuracy [0.015625, 0.921875, 0.890625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00063, 	 Accuracy [0.03125, 0.859375, 0.828125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00064, 	 Accuracy [0.03125, 0.90625, 0.578125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00065, 	 Accuracy [0.046875, 0.796875, 0.46875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00066, 	 Accuracy [0.03125, 0.96875, 0.703125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00067, 	 Accuracy [0.078125, 0.953125, 0.859375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00068, 	 Accuracy [0.03125, 0.953125, 0.984375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00069, 	 Accuracy [0.03125, 0.90625, 0.734375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00070, 	 Accuracy [0.0625, 0.90625, 0.765625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00071, 	 Accuracy [0.046875, 0.921875, 0.828125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00072, 	 Accuracy [0.015625, 0.953125, 0.71875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00073, 	 Accuracy [0.046875, 0.953125, 0.609375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00074, 	 Accuracy [0.046875, 0.9375, 0.265625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00075, 	 Accuracy [0.03125, 0.96875, 0.609375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00076, 	 Accuracy [0.09375, 0.953125, 0.453125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00077, 	 Accuracy [0.0, 0.984375, 0.296875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00078, 	 Accuracy [0.03125, 0.953125, 0.578125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00079, 	 Accuracy [0.0625, 0.96875, 0.6875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00080, 	 Accuracy [0.0625, 0.9375, 0.734375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+conv0 low:7.29e-06 high:3.52e-06
+conv1 low:0.667 high:0.184
+conv2 low:0.635 high:0.301
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+--------------------------------------------------------------------------------
+- Saved network parameters to `results/RadioML/May29_18-02-16/parameters_80.pth`.
+--------------------------------------------------------------------------------
+- [TESTING]  Loop 00080, 	 Accuracy [0.       0.03125  0.015625], 	 Ref 0.09375
+- Label train percentages:
+[4.2 4.5 4.  4.4 4.4 4.3 3.9 4.1 4.3 4.  4.3 4.1 3.8 4.1 3.9 4.2 4.1 4.4 4.4 4.  4.3 4.2 3.7 4.5]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00081, 	 Accuracy [0.0, 0.9375, 0.96875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00082, 	 Accuracy [0.046875, 0.9375, 0.53125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00083, 	 Accuracy [0.015625, 0.96875, 0.65625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00084, 	 Accuracy [0.046875, 0.8125, 0.453125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00085, 	 Accuracy [0.015625, 0.828125, 0.421875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00086, 	 Accuracy [0.046875, 0.984375, 0.9375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00087, 	 Accuracy [0.03125, 0.96875, 0.640625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00088, 	 Accuracy [0.046875, 0.84375, 0.640625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00089, 	 Accuracy [0.03125, 0.921875, 0.640625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00090, 	 Accuracy [0.046875, 0.96875, 0.65625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00091, 	 Accuracy [0.046875, 0.953125, 0.34375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00092, 	 Accuracy [0.078125, 0.9375, 0.75]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00093, 	 Accuracy [0.03125, 0.875, 0.359375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00094, 	 Accuracy [0.03125, 0.921875, 0.6875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00095, 	 Accuracy [0.046875, 0.921875, 0.46875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00096, 	 Accuracy [0.015625, 0.890625, 0.40625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00097, 	 Accuracy [0.046875, 0.890625, 0.4375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00098, 	 Accuracy [0.03125, 0.859375, 0.359375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00099, 	 Accuracy [0.0, 0.921875, 0.40625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00100, 	 Accuracy [0.015625, 0.84375, 0.40625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+conv0 low:1.06e-05 high:3.16e-06
+conv1 low:0.814 high:0.158
+conv2 low:0.507 high:0.469
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+--------------------------------------------------------------------------------
+- Saved network parameters to `results/RadioML/May29_18-02-16/parameters_100.pth`.
+--------------------------------------------------------------------------------
+- [TESTING]  Loop 00100, 	 Accuracy [0.        0.1015625 0.1015625], 	 Ref 0.109375
+- Label train percentages:
+[4.1 4.5 4.  4.4 4.5 4.3 4.  4.1 4.3 4.1 4.  4.1 3.9 4.1 3.8 4.2 4.2 4.5 4.3 4.1 4.3 4.  3.7 4.7]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00101, 	 Accuracy [0.03125, 0.890625, 0.375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00102, 	 Accuracy [0.015625, 0.953125, 0.1875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00103, 	 Accuracy [0.078125, 0.90625, 0.359375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00104, 	 Accuracy [0.015625, 0.9375, 0.375]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00105, 	 Accuracy [0.03125, 0.953125, 0.28125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00106, 	 Accuracy [0.0625, 0.953125, 0.53125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00107, 	 Accuracy [0.0625, 0.984375, 0.640625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00108, 	 Accuracy [0.0, 0.921875, 0.453125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00109, 	 Accuracy [0.03125, 0.96875, 0.515625]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00110, 	 Accuracy [0.109375, 0.90625, 0.75]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00111, 	 Accuracy [0.046875, 0.953125, 0.71875]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00112, 	 Accuracy [0.0625, 0.953125, 0.53125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+- [TRAINING] Loop 00113, 	 Accuracy [0.015625, 0.921875, 0.78125]
+tcmalloc: large alloc 8589934592 bytes == 0x7f7dddf00000 @  0x7f812cc3c001 0x7f80709d51af 0x7f8070a2bc23 0x7f8070a2ca87 0x7f8070ace823 0x5936cc 0x548c51 0x51566f 0x549576 0x4bca8a 0x5134a6 0x549576 0x604173 0x5f5506 0x5f8c6c 0x5f9206 0x64faf2 0x64fc4e 0x7f812c837c87 0x5b621a
+Traceback (most recent call last):
+  File "snnmodclass_ohjay/train.py", line 341, in <module>
+    labels=labels_spikes[sim_iteration])
+  File "/drive/MyDrive/Colab Notebooks/snnmodclass_ohjay/snnmodclass_ohjay/networks/__init__.py", line 180, in learn
+    spikes, labels, regularize=False)  # 0.1)
+  File "/drive/MyDrive/Colab Notebooks/snnmodclass_ohjay/snnmodclass_ohjay/dcll/pytorch_libdcll.py", line 691, in train_dcll
+    output, pvoutput, pv, pvmem = self.forward(input)
+  File "/drive/MyDrive/Colab Notebooks/snnmodclass_ohjay/snnmodclass_ohjay/dcll/pytorch_libdcll.py", line 728, in forward
+    self.clout.append(p.argmax(1).detach().cpu().numpy())
+KeyboardInterrupt
