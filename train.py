@@ -284,7 +284,6 @@ if __name__ == '__main__':
     gen_train = iter(train_data)
     gen_test = iter(get_loader(args.batch_size_test, train=False, **get_loader_kwargs))
 
-    print('train_data size:', train_data.shape())
     print('gen_train size:', gen_train.shape())
 # **********************************************************************************************************************
 
