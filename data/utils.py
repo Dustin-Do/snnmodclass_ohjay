@@ -45,16 +45,23 @@ def iq2spiketrain(x, y, out_w=28, out_h=28,
     """Convert each I/Q sample to a spike in the I/Q plane over time.
     Assumption: the (squeezed) shape of X is (batch, 2, num_timesteps).
     """
-    x = x.squeeze()
-
+    """ 
+    - 'x' is input data, has the size of (64, 2, 1, 1024)
+    - 'y' is labels, has the size of (64,24)
+    - output: 
+            'input_spikes' size torch.Size([1024, 64, 1, 128, 128])
+            'labels_spikes' size torch.Size([1024, 64, 24])
+    """
+    x = x.squeeze() # .squeeze() func is used when we want to remove single-dimensional entries from the shape of an array.
+                    # after this, 'x' will have size (64,2,1024)
     if gs_stdev > 0:
         x = add_gaussian(x, gs_stdev)
 
     # Generate spike trains
-    batch_size = x.shape[0]
-    num_timesteps = x.shape[-1]
-    assert max_duration <= num_timesteps
-    spike_trains = np.zeros((max_duration, batch_size, 1, out_h, out_w))
+    batch_size = x.shape[0]                 # 'batch_size' = 64
+    num_timesteps = x.shape[-1]             # 'num_timesteps' = 1024
+    assert max_duration <= num_timesteps    # if condition false, stop
+    spike_trains = np.zeros((max_duration, batch_size, 1, out_h, out_w))  # 'spike_train' has size (500,64,1,28,28)
     t_start = np.random.randint(0, num_timesteps - max_duration + 1)
     t_end = t_start + max_duration
     for i, t in enumerate(range(t_start, t_end)):

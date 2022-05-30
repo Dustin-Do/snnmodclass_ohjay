@@ -17,9 +17,9 @@ class RadioMLDataset(data.Dataset):
 
         self.train = train
 
-        if not os.path.exists(os.path.join(data_dir, 'class23_snr30.hdf5')):
-            # Split huge HDF5 file into per-SNR, per-class HDF5 files
 
+        #----------- Split huge HDF5 file into per-SNR (4096 ex), per-class HDF5 files (106.496 ex) --------------------
+        if not os.path.exists(os.path.join(data_dir, 'class23_snr30.hdf5')):
             data_path = os.path.join(data_dir, 'GOLD_XYZ_OSC.0001_1024.hdf5')
             full_h5f = h5py.File(data_path, 'r')
 
@@ -40,7 +40,8 @@ class RadioMLDataset(data.Dataset):
 
             # Convert one-hot labels back to argmax
             Y = np.argmax(full_h5f['Y'], axis=1)
-
+            print('-'*120)
+            print('Start split data into per-SNR and per-modulation class files and save to .hdf files')
             for class_idx in range(24):
                 class_X = full_h5f['X'][(Y == class_idx).nonzero()[0]]
                 class_Z = full_h5f['Z'][(Y == class_idx).nonzero()[0], 0]
@@ -50,29 +51,42 @@ class RadioMLDataset(data.Dataset):
                     h5f = h5py.File(h5f_path, 'w')
                     h5f.create_dataset('X', data=class_X[class_Z == snr, :, :])
                     h5f.close()
-                    print('Wrote (SNR {z}, class {cl}) data to `{path}`.'.format(
+                    print('Write (SNR {z}, class {cl}) data to `{path}`.'.format(
                         z=snr, cl=class_idx, path=h5f_path))
                 class_X = None
                 class_Z = None
+            print('-'*120)
             Y = None
             full_h5f.close()
+        # --------------------------------------------------------------------------------------------------------------
 
+
+        # --------------------------------------------------------------------------------------------------------------
         # Min/max values across entire dataset
         # Want to use the same values for train/test normalization
         X_minval = float('inf')
         X_maxval = float('-inf')
+        # --------------------------------------------------------------------------------------------------------------
 
-        # The data for each (class, SNR) pair
-        # will be truncated to the first PER_H5_SIZE examples
-        per_h5_size = int(per_h5_frac * 4096)
-        snr_count = (max_snr - min_snr) // 2 + 1
-        train_split_size = int(train_frac * per_h5_size)
+        # **************************************************************************************************************
+        """The data for each (class, SNR) pair will be truncated to the first PER_H5_SIZE examples. Just signals have
+        SNR ranging from [6:2:30] will be extracted. From each [class,SNR] file (4096 ex), all signals have SNR from 6
+        to 30dB (2048 ex) will be extracted and save to 'X_split'. 'X_split' has 1843 ex if it's training set, else is 
+        205 ex for each loop of SNR value. """
+        # --------------------------------------------------------------------------------------------------------------
+        per_h5_size = int(per_h5_frac * 4096)             # 0.5 * 4096
+        snr_count = (max_snr - min_snr) // 2 + 1          # chia lay nguyen, =13
+        train_split_size = int(train_frac * per_h5_size)  # int(0.9 * 2048) = 1843
+        # Get size for training set or testing set
         if train:
             split_size = train_split_size
         else:
             split_size = per_h5_size - train_split_size
         total_size = 24 * snr_count * split_size
+        # --------------------------------------------------------------------------------------------------------------
 
+
+        # --------------------------------------------------------------------------------------------------------------
         self.X = np.zeros((total_size, 1024, 2), dtype=np.float32)
         self.Y = np.zeros(total_size, dtype=np.int64)
         for class_idx in range(24):
@@ -94,6 +108,8 @@ class RadioMLDataset(data.Dataset):
                 h5f.close()
                 X = None
                 X_split = None
+        # --------------------------------------------------------------------------------------------------------------
+        # **************************************************************************************************************
 
         # Add fake height dim (TODO remove if switching to 1D convolutions)
         self.X = self.X.transpose(0, 2, 1)[:, :, np.newaxis, :]
@@ -121,9 +137,10 @@ def get_radio_ml_loader(batch_size, train, **kwargs):
                              per_h5_frac=per_h5_frac,
                              train_frac=train_frac)
 
-    identifier = 'train' if train else 'test'
-    print('[%s] dataset size: %d' % (identifier, len(dataset)))
-
+    identifier = 'TRAIN SET' if train else 'TEST SET'
+    print('#'*120)
+    print('[%s] dataset size (func get_radio_ml_loader/load_radio_ml.py): %d' % (identifier, len(dataset)))
+    print('#'*120)
     loader = DataLoader(dataset=dataset,
                         batch_size=batch_size,
                         shuffle=train)

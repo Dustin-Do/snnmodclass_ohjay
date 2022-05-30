@@ -56,7 +56,7 @@ def parse_args():
                         metavar='N', help='disables saving into Results directory')
     parser.add_argument('--seed', type=int, default=1,
                         metavar='S', help='random seed')
-    parser.add_argument('--n_test_interval', type=int, default=20,
+    parser.add_argument('--n_test_interval', type=int, default=1,
                         metavar='N', help='how many steps to run before testing')
     parser.add_argument('--n_test_samples', type=int, default=128,
                         metavar='N', help='how many test samples to use')
@@ -283,8 +283,6 @@ if __name__ == '__main__':
     train_data = get_loader(args.batch_size, train=True, **get_loader_kwargs)
     gen_train = iter(train_data)
     gen_test = iter(get_loader(args.batch_size_test, train=False, **get_loader_kwargs))
-
-    print('gen_train type', type(gen_train))
 # **********************************************************************************************************************
 
 
@@ -335,34 +333,45 @@ if __name__ == '__main__':
             input_spikes, labels_spikes = to_spike_train(input, labels, **to_st_train_kwargs)
             input_spikes = torch.Tensor(input_spikes).to(device)
             labels_spikes = torch.Tensor(labels_spikes).to(device)
-
-            print('input_spikes size', input_spikes.size())
-            print('labels_spikes size', labels_spikes.size())
             """-----------------------------------"""
 
             """TRAINING"""
             net.reset()
             net.train()
+            # input_spikes size: torch.Size([1024, 64, 1, 128, 128])
+            # labels_spikes size: torch.Size([1024, 64, 24])
             for sim_iteration in range(n_iters_sampled): # 'n_iters_sampled' = 1024
                 net.learn(x=input_spikes[sim_iteration],
                           labels=labels_spikes[sim_iteration])
             acc_train = net.accuracy(labels_spikes)
-            step_str = str(step).zfill(5)
+            step_str = str(step).zfill(5)   # not important, used to create a 5-digit number for print
             print('- [TRAINING] Loop {}, \t Accuracy {}'.format(step_str, acc_train))
+            """-----------------------------------"""
 
+        """ - 'input' will have size tensor(64, 2, 1, 1024)
+            - 'label' will have size tensor(64,24) """
         ref_input = torch.Tensor(input).to(device).reshape(-1, *ref_im_dims)   # 'ref_im_dims' = (2,1,1024)
+                                                                               # resize ref_input to (...,2,1,1024)
         ref_label = torch.Tensor(labels).to(device)
 
         ref_net.train()
         ref_net.learn(x=ref_input, labels=ref_label)
 
-        # Test
-        if (step % args.n_test_interval) == 0:
-            test_idx = step // args.n_test_interval
+        """ TESTING """
+        """ Do the test after 20 loop of training """
+        if (step % args.n_test_interval) == 0:          # 'args.n_test_interval' = 20
+            test_idx = step // args.n_test_interval     # 'step' range from 1 to 10000
             for i, test_data in enumerate(all_test_data):
                 if not args.just_ref:
+                    # --------------------------------------------------------------------------------------------------
+                    # create a spike input of test dataset
                     test_input, test_labels = to_spike_train(*test_data,
                                                              **to_st_test_kwargs)
+                    print('test_input size',test_input.size())
+                    print('test_labels size',test_labels.size())
+                    # --------------------------------------------------------------------------------------------------
+
+                    # --------------------------------------------------------------------------------------------------
                     try:
                         test_input = torch.Tensor(test_input).to(device)
                     except RuntimeError as e:
@@ -370,6 +379,7 @@ if __name__ == '__main__':
                               '. Try to decrease your batch_size_test with the --batch_size_test argument.')
                         raise
                     test_labels = torch.Tensor(test_labels).to(device)
+                    # --------------------------------------------------------------------------------------------------
 
                     net.reset()
                     net.eval()
@@ -398,9 +408,9 @@ if __name__ == '__main__':
                 save_path = os.path.join(out_dir, 'parameters_{}.pth'.format(step))
                 torch.save(net.cpu().state_dict(), save_path)
                 net = net.to(device)
-                print('-' * 80)
+                print('-' * 120)
                 print('- Saved network parameters to `%s`.' % save_path)
-                print('-' * 80)
+                print('-' * 120)
 
             if not args.just_ref:
                 acc = np.mean(acc_test[test_idx], axis=0)
@@ -408,8 +418,10 @@ if __name__ == '__main__':
                 acc = 'N/A'
             acc_ref = np.mean(acc_test_ref[test_idx], axis=0)
             step_str = str(step).zfill(5)
+            print('-' * 120)
             print('- [TESTING]  Loop {}, \t Accuracy {}, \t Ref {}'.format(step_str, acc, acc_ref))
             print('- Label train percentages:')
+            print('-' * 120)
             label_train_percentages = label_train_counts / np.sum(label_train_counts) * 100
             print(np.array2string(label_train_percentages, max_line_width=300, precision=1))
 
