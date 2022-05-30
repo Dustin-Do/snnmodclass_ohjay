@@ -221,7 +221,7 @@ if __name__ == '__main__':
 
         # ------------------------ Load weights to model variable 'net' -------------------------------------------------
         if args.restore_path:
-            print('-' * 80)
+            print('-' * 120)
             if not os.path.isfile(args.restore_path):
                 print('ERROR: Cannot load file `%s`.' % args.restore_path)
                 print('File does not exist! Exit loading...')
@@ -229,7 +229,7 @@ if __name__ == '__main__':
                 state_dict = torch.load(args.restore_path)
                 net.load_state_dict(state_dict)
                 print('Loaded the weights of trained SNN model from `%s`.' % args.restore_path)
-            print('-' * 80)
+            print('-' * 120)
         # --------------------------------------------------------------------------------------------------------------
 
         # -------------------------- Model set up -----------------------------------------------------------------------
@@ -284,7 +284,7 @@ if __name__ == '__main__':
     gen_train = iter(train_data)
     gen_test = iter(get_loader(args.batch_size_test, train=False, **get_loader_kwargs))
 
-    print('gen_train size:', gen_train.shape())
+    print('gen_train type', type(gen_train))
 # **********************************************************************************************************************
 
 
