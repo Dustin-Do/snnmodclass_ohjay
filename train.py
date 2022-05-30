@@ -28,9 +28,9 @@ def parse_args():
                         metavar='N', help='fraction of each HDF5 data file to use')
     parser.add_argument('--train_frac', type=float, default=0.9,
                         metavar='N', help='train split (1-TRAIN_FRAC is the test split)')
-    parser.add_argument('--network_spec', type=str, default='snnmodclass_ohjay/networks/radio_ml_conv.yaml',
+    parser.add_argument('--network_spec', type=str, default='networks/radio_ml_conv.yaml',
                         metavar='S', help='path to YAML file describing net architecture')
-    parser.add_argument('--ref_network_spec', type=str, default='snnmodclass_ohjay/networks/radio_ml_conv_ref.yaml',
+    parser.add_argument('--ref_network_spec', type=str, default='networks/radio_ml_conv_ref.yaml',
                         metavar='S', help='path to YAML file describing reference net architecture')
     parser.add_argument('--just_ref', action='store_true',
                         help='whether we want to just train the reference network')
@@ -283,6 +283,8 @@ if __name__ == '__main__':
     train_data = get_loader(args.batch_size, train=True, **get_loader_kwargs)
     gen_train = iter(train_data)
     gen_test = iter(get_loader(args.batch_size_test, train=False, **get_loader_kwargs))
+
+    print('train_data size:', train_data.shape())
 # **********************************************************************************************************************
 
 
@@ -309,6 +311,7 @@ if __name__ == '__main__':
     # ------------------------------------------------------------------------------------------------------------------
         """  
         - 'gen_train' has size (575.016, 1024, 2). 90% of truncated data (2048 ex each) of 24*13 [class,SNR] pairs
+        - 'input' will have size (575.016, 1024, 2)
         """
         try:
             input, labels = next(gen_train) # Slice over 'gen_train'
