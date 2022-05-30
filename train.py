@@ -28,9 +28,9 @@ def parse_args():
                         metavar='N', help='fraction of each HDF5 data file to use')
     parser.add_argument('--train_frac', type=float, default=0.9,
                         metavar='N', help='train split (1-TRAIN_FRAC is the test split)')
-    parser.add_argument('--network_spec', type=str, default='networks/radio_ml_conv.yaml',
+    parser.add_argument('--network_spec', type=str, default='snnmodclass_ohjay/networks/radio_ml_conv.yaml',
                         metavar='S', help='path to YAML file describing net architecture')
-    parser.add_argument('--ref_network_spec', type=str, default='networks/radio_ml_conv_ref.yaml',
+    parser.add_argument('--ref_network_spec', type=str, default='snnmodclass_ohjay/networks/radio_ml_conv_ref.yaml',
                         metavar='S', help='path to YAML file describing reference net architecture')
     parser.add_argument('--just_ref', action='store_true',
                         help='whether we want to just train the reference network')
@@ -285,6 +285,7 @@ if __name__ == '__main__':
     gen_test = iter(get_loader(args.batch_size_test, train=False, **get_loader_kwargs))
 
     print('train_data size:', train_data.shape())
+    print('gen_train size:', gen_train.shape())
 # **********************************************************************************************************************
 
 
@@ -321,6 +322,8 @@ if __name__ == '__main__':
         for label in labels:
             label_train_counts[label] += 1
         labels = to_one_hot(labels, target_size)
+
+        print('input size', input.shape())
     # ------------------------------------------------------------------------------------------------------------------
 
     # ------------------------------------------------------------------------------------------------------------------
