@@ -36,6 +36,7 @@ class ReferenceConvNetwork(torch.nn.Module):
             else:
                 raise ValueError('unsupported pooling spec type: %r' % type(pooling))
 
+            """ Define a convolutional layer """
             layer = torch.nn.Sequential(
                 torch.nn.Conv2d(in_channels=inp[0],
                                 out_channels=int(out_channels * args.netscale),
@@ -47,7 +48,7 @@ class ReferenceConvNetwork(torch.nn.Module):
                 torch.nn.ReLU()
             )
             layer = layer.to(device)
-            return (layer, [out_channels])
+            return layer, [out_channels]
 
         n = im_dims
         self.num_layers = len(convs)
@@ -93,6 +94,7 @@ class ReferenceConvNetwork(torch.nn.Module):
         x = self.linear3(x)
         return x
 
+    """ Calculate loss """
     def learn(self, x, labels):
         y = self.forward(x)
 
@@ -102,11 +104,14 @@ class ReferenceConvNetwork(torch.nn.Module):
         self.optim.step()
 
     def test(self, x):
+        # The detach() method constructs a new view on a tensor which is declared not to need gradients, i.e., it is to
+        # be excluded from further tracking of operations, and therefore the subgraph involving this view is not recorded.
         self.y_test = self.forward(x.detach())
 
     def write_stats(self, writer, epoch):
         writer.add_scalar('acc/ref_net', self.acc, epoch)
 
+    """ Calculate the accuracy """
     def accuracy(self, labels):
         self.acc = torch.mean(
             (self.y_test.argmax(1) == labels.argmax(1)).float()).item()

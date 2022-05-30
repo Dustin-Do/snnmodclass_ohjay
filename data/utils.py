@@ -49,6 +49,7 @@ def iq2spiketrain(x, y, out_w=28, out_h=28,
     - 'x' is input data, has the size of (64, 2, 1, 1024)
     - 'y' is labels, has the size of (64,24)
     - output: 
+        train_set:
             'input_spikes' size torch.Size([1024, 64, 1, 128, 128])
             'labels_spikes' size torch.Size([1024, 64, 24])
     """
