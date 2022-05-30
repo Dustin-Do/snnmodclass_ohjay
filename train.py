@@ -363,15 +363,16 @@ if __name__ == '__main__':
             test_idx = step // args.n_test_interval     # 'step' range from 1 to 10000
             for i, test_data in enumerate(all_test_data):
                 if not args.just_ref:
-                    # --------------------------------------------------------------------------------------------------
-                    # create a spike input of test dataset
+                    # ---------------------Create a spike input of test dataset-----------------------------------------
+                    # 'test_input' size torch.Size([1024, 64, 1, 128, 128])
+                    # 'test_labels' size torch.Size([1024, 64, 24])
                     test_input, test_labels = to_spike_train(*test_data,
                                                              **to_st_test_kwargs)
-                    test_input = torch.Tensor(test_input)
-                    test_labels = torch.Tensor(test_labels)
 
-                    print('test_input size',test_input.size())
-                    print('test_labels size',test_labels.size())
+                    # test_input = torch.Tensor(test_input)
+                    # test_labels = torch.Tensor(test_labels)
+                    # print('test_input size',test_input.size())
+                    # print('test_labels size',test_labels.size())
                     # --------------------------------------------------------------------------------------------------
 
                     # --------------------------------------------------------------------------------------------------
@@ -424,10 +425,9 @@ if __name__ == '__main__':
             acc_ref = np.mean(acc_test_ref[test_idx], axis=0)
             step_str = str(step).zfill(5)
             print('-' * 120)
-            print('- [TESTING]  Loop {}, \t Accuracy {}, \t Ref {}'.format(step_str, acc, acc_ref))
-            print('- Label train percentages:')
-            print('-' * 120)
+            print('- [TESTING]  Loop {}, \t Accuracy {}, \t Accuracy_Ref {}'.format(step_str, acc, acc_ref))
             label_train_percentages = label_train_counts / np.sum(label_train_counts) * 100
-            print(np.array2string(label_train_percentages, max_line_width=300, precision=1))
+            print('- Label train percentages: ', np.array2string(label_train_percentages, max_line_width=300, precision=1))
+            print('-' * 120)
 
     writer.close()
