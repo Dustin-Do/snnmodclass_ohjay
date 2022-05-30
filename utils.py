@@ -58,7 +58,7 @@ def iq2spiketrain(x, y, out_w=28, out_h=28,
     batch_size = x.shape[0]                 # 'batch_size' = 64
     num_timesteps = x.shape[-1]             # 'num_timesteps' = 1024
     assert max_duration <= num_timesteps    # if condition false, stop
-    spike_trains = np.zeros((max_duration, batch_size, 1, out_h, out_w))
+    spike_trains = np.zeros((max_duration, batch_size, 1, out_h, out_w))  # 'spike_train' has size (500,64,1,28,28)
     t_start = np.random.randint(0, num_timesteps - max_duration + 1)
     t_end = t_start + max_duration
     for i, t in enumerate(range(t_start, t_end)):
@@ -87,6 +87,5 @@ def iq2spiketrain(x, y, out_w=28, out_h=28,
 
     # The shape of `all_target` is (max_duration, batch_size, target_size)
     all_target = np.repeat(y[np.newaxis, :, :], max_duration, axis=0)
-    print('spike_trains size',spike_trains.size())
-    print('all_target size', all_target.size())
+
     return spike_trains, all_target

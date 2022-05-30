@@ -335,6 +335,9 @@ if __name__ == '__main__':
             input_spikes, labels_spikes = to_spike_train(input, labels, **to_st_train_kwargs)
             input_spikes = torch.Tensor(input_spikes).to(device)
             labels_spikes = torch.Tensor(labels_spikes).to(device)
+
+            print('input_spikes size', input_spikes.size())
+            print('labels_spikes size', labels_spikes.size())
             """-----------------------------------"""
 
             """TRAINING"""
