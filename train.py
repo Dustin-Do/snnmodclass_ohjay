@@ -56,7 +56,7 @@ def parse_args():
                         metavar='N', help='disables saving into Results directory')
     parser.add_argument('--seed', type=int, default=1,
                         metavar='S', help='random seed')
-    parser.add_argument('--n_test_interval', type=int, default=1,
+    parser.add_argument('--n_test_interval', type=int, default=20,
                         metavar='N', help='how many steps to run before testing')
     parser.add_argument('--n_test_samples', type=int, default=128,
                         metavar='N', help='how many test samples to use')
@@ -367,6 +367,9 @@ if __name__ == '__main__':
                     # create a spike input of test dataset
                     test_input, test_labels = to_spike_train(*test_data,
                                                              **to_st_test_kwargs)
+                    test_input = torch.Tensor(test_input)
+                    test_labels = torch.Tensor(test_labels)
+
                     print('test_input size',test_input.size())
                     print('test_labels size',test_labels.size())
                     # --------------------------------------------------------------------------------------------------
@@ -381,12 +384,13 @@ if __name__ == '__main__':
                     test_labels = torch.Tensor(test_labels).to(device)
                     # --------------------------------------------------------------------------------------------------
 
+                    # --------------------------------------------------------------------------------------------------
                     net.reset()
                     net.eval()
                     for sim_iteration in range(n_iters_test):
                         net.test(x=test_input[sim_iteration])
                     acc_test[test_idx, i, :] = net.accuracy(test_labels)
-
+                    # --------------------------------------------------------------------------------------------------
                     if i == 0:
                         net.write_stats(writer, step, comment='_batch_'+str(i))
 
@@ -399,6 +403,7 @@ if __name__ == '__main__':
 
                 if i == 0:
                     ref_net.write_stats(writer, step)
+
 
             if not args.just_ref and not args.no_save:
                 np.save(os.path.join(out_dir, 'acc_test.npy'), acc_test)
