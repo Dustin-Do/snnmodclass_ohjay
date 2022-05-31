@@ -126,9 +126,9 @@ class RadioMLDataset(data.Dataset):
 
 def get_radio_ml_loader(batch_size, train, **kwargs):
     data_dir = kwargs['data_dir']
-    min_snr = kwargs.get('min_snr', 6)
-    max_snr = kwargs.get('max_snr', 30)
-    per_h5_frac = kwargs.get('per_h5_frac', 0.5)
+    min_snr = kwargs.get('min_snr', 16)
+    max_snr = kwargs.get('max_snr', 18)
+    per_h5_frac = kwargs.get('per_h5_frac', 0.25)
     train_frac = kwargs.get('train_frac', 0.9)
     dataset = RadioMLDataset(data_dir, train,
                              normalize=False,
