@@ -20,11 +20,11 @@ def parse_args():
                         choices=['MNIST', 'RadioML'], help='which data to use')
     parser.add_argument('--radio_ml_data_dir', type=str, default='2018.01',
                         help='path to the folder containing the RadioML HDF5 file(s)')
-    parser.add_argument('--min_snr', type=int, default=6,
+    parser.add_argument('--min_snr', type=int, default=16,
                         metavar='N', help='minimum SNR (inclusive) to use during data loading')
-    parser.add_argument('--max_snr', type=int, default=30,
+    parser.add_argument('--max_snr', type=int, default=18,
                         metavar='N', help='maximum SNR (inclusive) to use during data loading')
-    parser.add_argument('--per_h5_frac', type=float, default=0.015625,
+    parser.add_argument('--per_h5_frac', type=float, default=0.125,
                         metavar='N', help='fraction of each HDF5 data file to use')
     parser.add_argument('--train_frac', type=float, default=0.9,
                         metavar='N', help='train split (1-TRAIN_FRAC is the test split)')
