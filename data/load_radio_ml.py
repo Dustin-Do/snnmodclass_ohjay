@@ -13,7 +13,7 @@ class RadioMLDataset(data.Dataset):
     """
 
     def __init__(self, data_dir, train,
-                 normalize=False, min_snr=6, max_snr=30, per_h5_frac=0.5, train_frac=0.9):
+                 normalize=False, min_snr=16, max_snr=18, per_h5_frac=0.25, train_frac=0.9):
 
         self.train = train
 
