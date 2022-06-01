@@ -1,8 +1,8 @@
 #!/bin/bash
 
 data="MNIST"
-network_spec="networks/mnist_conv.yaml"
-ref_network_spec="networks/mnist_conv.yaml"
+network_spec="snnmodclass_ohjay/networks/mnist_conv.yaml"
+ref_network_spec="snnmodclass_ohjay/networks/mnist_conv.yaml"
 
 burnin=50
 n_iters=500
