@@ -2,7 +2,7 @@
 
 data="RadioML"
 radio_ml_data_dir="2018.01"
-min_snr=6
+min_snr=30
 max_snr=30
 per_h5_frac=0.5
 train_frac=0.9
