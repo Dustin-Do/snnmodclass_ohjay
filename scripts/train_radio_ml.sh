@@ -13,8 +13,8 @@ max_I=1.0
 min_Q=-1.0
 max_Q=1.0
 
-network_spec="networks/radio_ml_conv.yaml"
-ref_network_spec="networks/radio_ml_conv_ref.yaml"
+network_spec="snnmodclass_ohjay/networks/radio_ml_conv.yaml"
+ref_network_spec="snnmodclass_ohjay/networks/radio_ml_conv_ref.yaml"
 
 burnin=20
 n_iters=1024
