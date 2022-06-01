@@ -19,7 +19,7 @@ batch_size_test=512
 n_test_samples=512
 arp=1.0
 
-python3 test_radio_ml.py \
+!python3 test_radio_ml.py \
     --radio_ml_data_dir $radio_ml_data_dir \
     --per_h5_frac $per_h5_frac \
     --train_frac $train_frac \
