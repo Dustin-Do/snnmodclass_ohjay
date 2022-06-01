@@ -27,7 +27,7 @@ learning_rates=(0.00000000025)
 ref_lr=0.001
 arp=1.0
 
-!python train.py \
+python3 train.py \
     --data $data \
     --radio_ml_data_dir $radio_ml_data_dir \
     --min_snr $min_snr \
